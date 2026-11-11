@@ -1,0 +1,688 @@
+registry_id,org_name,org_role,address,city,zip_code,phone,email,status
+1652,Park's Kitchen,donor,1197 E Passyunk Ave,Philadelphia,19123,(445) 555-5313,donate@parkskitchen.example.org, active
+1094,Spring Garden Community Kitchen,recipient,3598 Frankford Ave,Philadelphia,19134,(215) 555-7929,info@springgardencommunitykit.example.org, active
+1279,Red Brick Spoon Grill,donor,2160 Baltimore Ave,Philadelphia,19130,(215) 555-2631,donate@redbrickspoongrill.example.org,ACTIVE
+1128,Iron Mutual Aid Pantry,recipient,9469 Main St,Philadelphia, 19124,(267) 555-3127,info@ironmutualaidpantry.example.org,Active
+1231,Bella Vista Corner Market,DONOR,3457 E Erie Ave,Philadelphia,19103,(267) 555-0557,donate@bellavistacornermarket.example.org, active
+1317,Patel's Bakery,donor,4960 Race St,Philadelphia, 19102,(267) 555-2387,donate@patelsbakery.example.org,active
+1499,Brennan Family Grocers,donor,5152 S 9th St,Philadelphia,19106,(445) 555-9385,donate@brennanfamilygrocers.example.org,active
+1186,Kingsessing Parish Kitchen,both,9303 Snyder Ave,Philadelphia,19137,(267) 555-4823,donate@kingsessingparishkitchen.example.org,Active
+1400,Lucky Mutual Aid Pantry,RECIPIENT,5230 Main St,PHILADELPHIA,19144,(445) 555-7649,info@luckymutualaidpantry.example.org,active
+1369,Mensah's Bakery,donor,1749 Girard Ave,Philadelphia,19104,(445) 555-3613,donate@mensahsbakery.example.org,ACTIVE
+1243,Russo's Diner,donor,7610 Market St,Philadelphia,19130,(445) 555-7510,donate@russosdiner.example.org,Active
+1621,Powelton Community Garden,both,4788 E Passyunk Ave,Philadelphia,19151,(445) 555-9558,donate@poweltoncommunitygarden.example.org, inactive
+1179,Copper College Cafeteria,donor,3534 Girard Ave,Philadelphia,19104,(445) 555-5482,donate@coppercollegecafeteria.example.org,ACTIVE
+1377,Lawncrest Food Co-op,donor,1262 Ridge Ave,Philadelphia,19146,(445) 555-6291,donate@lawncrestfoodcoop.example.org, active
+1059,Grays Ferry Bread Co.,donor,5832 Main St,Philadelphia,19130,(445) 555-8292,donate@graysferrybreadco.example.org,active
+1228,Ramirez Family Farm,donor,8481 Chestnut St,Philadelphia,19103,(267) 555-7640,donate@ramirezfamilyfarm.example.org,Active
+1076,Copper Riverside Food Supply,donor,5766 N 63rd St,Philadelphia,19106,(215) 555-0265,donate@copperriversidefoodsuppl.example.org,Active
+1365,Silver Riverside Food Supply,DONOR,2875 N 22nd St,Philadelphia,19125,(267) 555-4119,donate@silverriversidefoodsuppl.example.org, active
+1286,The Rusty Oven,donor,720 Spruce St,Philadelphia,19149,(215) 555-1211,donate@therustyoven.example.org,ACTIVE
+1474,Powelton Community Kitchen,recipient,4957 Arch St,Philadelphia,19123,(215) 555-5272,info@poweltoncommunitykitchen.example.org, active
+1046,Mensah Family Grocers,donor,7037 Woodland Ave,Philadelphia,19107,(215) 555-3335,donate@mensahfamilygrocers.example.org, active
+1341,Lucky Medical Center Cafeteria,donor,3684 Girard Ave,Philadelphia,19106,(445) 555-5030,donate@luckymedicalcentercafete.example.org,ACTIVE
+1063,Little Oven Bakery,DONOR,9585 S 52nd St,Philadelphia,19148,(445) 555-9956,donate@littleovenbakery.example.org,Active
+1506,The Blue Pot,donor,119 S 52nd St,Philadelphia, 19120,(215) 555-3476,donate@thebluepot.example.org, active
+1595,Society Hill Corporate Center Dining Services,donor,2856 Washington Ave,Philadelphia,19114,(445) 555-2504,donate@societyhillcorporatecent.example.org,ACTIVE
+1521,Cohen's Bakery,donor,2792 Woodland Ave,Philadelphia,19125,(267) 555-7767,donate@cohensbakery.example.org,active
+1588,Spruce Hill Pizza Co.,donor,2722 N 22nd St,Philadelphia,19111,(215) 555-2543,donate@sprucehillpizzaco.example.org,Active
+1161,Holmesburg Events & Catering,donor,3776 S Broad St,Philadelphia,19127,(267) 555-3565,donate@holmesburgeventscatering.example.org,ACTIVE
+1356,Rossi Family Farm,donor,755 Woodland Ave,Philadelphia,19106,(267) 555-4275,donate@rossifamilyfarm.example.org,active
+1123,Russo House Family Shelter,recipient,2157 Walnut St,Philadelphia,19134,(267) 555-9064,info@russohousefamilyshelter.example.org,ACTIVE
+1664,"Rusty Corporate Center Cafeteria, Inc.",donor,465 W Allegheny Ave,Philadelphia,19107,,donate@rustycorporatecentercafe.example.org,active
+1520,Cobblestone Lantern Eatery,donor,3643 Haverford Ave,Philadelphia,19106,(445) 555-3449,donate@cobblestonelanterneatery.example.org,active
+1488,Byrne House Family Shelter,recipient,8991 Cottman Ave,Philadelphia,19124,(215) 555-7742,info@byrnehousefamilyshelter.example.org,active
+1562,Green Oven Bakery,donor,8363 Oregon Ave,Philadelphia,19132,(215) 555-2587,donate@greenovenbakery.example.org, active
+1238,Fox Chase Fresh Market,Donor,8285 S Broad St,Philadelphia,19138,(445) 555-9777,donate@foxchasefreshmarket.example.org,ACTIVE
+1198,Abboud's Bakery,donor,1038 Bustleton Ave,Philadelphia,19149,(215) 555-1919,donate@abboudsbakery.example.org, active
+1554,Park's Eatery,donor,7428 Pine St,Philadelphia,19104,(445) 555-0661,donate@parkseatery.example.org,ACTIVE
+1048,Blue Fork Catering Co.,donor,1584 Oregon Ave,Philadelphia,19102-9609,(445) 555-6892,donate@blueforkcateringco.example.org,Inactive
+1221,Cobblestone Community Kitchen,recipient,9432 Snyder Ave,Philadelphia,19120,(267) 555-8222,info@cobblestonecommunitykitc.example.org,active
+1557,Graduate Hospital Recovery House,recipient,2943 S 52nd St,Philadelphia,19150,(215) 555-3667,info@graduatehospitalrecovery.example.org,Active
+1508,Spruce Hill Mutual Aid Pantry,recipient,1719 Oregon Ave,Philadelphia,19143.0,(445) 555-7723,info@sprucehillmutualaidpantr.example.org,Inactive
+1240,Haddad Wholesale Foods,donor,5876 N 22nd St,Philadelphia,19131,(215) 555-1195,donate@haddadwholesalefoods.example.org,Active
+1391,Cobblestone Crust Bakehouse,Donor,4535 Arch St,"Philadelphia, PA",19102,(445) 555-2301,donate@cobblestonecrustbakehous.example.org,Inactive
+1342,Rusty Outreach Kitchen,recipient,8803 N Broad St,Philadelphia,19139,(445) 555-1228,info@rustyoutreachkitchen.example.org,ACTIVE
+1141,Tran House Food Pantry,recipient,6765 E Passyunk Ave,Philadelphia,19144,(445) 555-2730,info@tranhousefoodpantry.example.org,active
+1335,Eastwick Student Pantry,Recipient,1741 Aramingo Ave,Philadelphia,19132,(267) 555-2603,info@eastwickstudentpantry.example.org, active
+1349,Lucky Hearth Bistro,donor,4257 S Broad St,Philadelphia,19102,(215) 555-0870,donate@luckyhearthbistro.example.org,Active
+1350,Nguyen House Women's Shelter,recipient,7644 Market St,Philadelphia, 19116,(267) 555-8110,info@nguyenhousewomensshelter.example.org,ACTIVE
+1133,Bella Vista Community Garden,both,4010 Frankford Ave,Philadelphia,19120,(445) 555-4836,donate@bellavistacommunitygarde.example.org,Active
+1682,Somerton Suites LLC,donor,6906 Torresdale Ave Suite 316,Philadelphia,19139,(267) 555-6587,donate@somertonsuites.example.org, active
+1018,Silver Mini Mart,donor,8408 Germantown Ave,Philadelphia,19103,(215) 555-2381,donate@silverminimart.example.org, active
+1364,Cedar Park Medical Center Dining Services,donor,3914 Fairmount Ave,Philadelphia,19145,(445) 555-3716,donate@cedarparkmedicalcenterdi.example.org,ACTIVE
+1543,Callowhill Noodle House,donor,1329 Washington Ave,Philadelphia,19103,(215) 555-2533,donate@callowhillnoodlehouse.example.org,ACTIVE
+1623,Queen Village Neighborhood Center,both,6012 Girard Ave,Philadelphia,19136,(215) 555-7215,donate@queenvillageneighborhood.example.org,ACTIVE
+1038,Keystone Food Distributors,donor,7316 Main St,Philadelphia,19129,(215) 555-8501,donate@keystonefooddistributors.example.org,ACTIVE
+1135,Delaware Food Distributors,donor,7041 Arch St,Philadelphia,19122,(445) 555-0487,donate@delawarefooddistributors.example.org,ACTIVE
+1619,Park's Bistro,Donor,2682 Main St,Philadelphia,19150,(267) 555-6166,donate@parksbistro.example.org, active
+1515,Chen's Kitchen,donor,559 N 63rd St,Philadelphia,19107,(445) 555-9425,donate@chenskitchen.example.org, inactive
+1579,Okafor Family Grocers,donor,6709 Fairmount Ave,Philadelphia,19135,(267) 555-2303,donate@okaforfamilygrocers.example.org,active
+1627,Fox Chase Farmers Market Stand,Donor,1950 N 22nd St,Philadelphia,19129-3462,(215) 555-9046,donate@foxchasefarmersmarketsta.example.org,active
+1222,Holmesburg Outreach Kitchen,RECIPIENT,1809 Torresdale Ave,Philadelphia,19142,(445) 555-3816,info@holmesburgoutreachkitche.example.org, active
+1353,Romano House Youth Center Pantry,RECIPIENT,2280 Torresdale Ave,Philadelphia,19104,(267) 555-9515,info@romanohouseyouthcenterpa.example.org,ACTIVE
+1434,Somerton Hotel,donor,959 Woodland Ave,Philadelphia,19103,(215) 555-6939,donate@somertonhotel.example.org,active
+1636,Novak Catering,donor,9879 South St,Philadelphia,19146,(267) 555-5974,donate@novakcatering.example.org, active
+1101,Patel House Youth Center Pantry,recipient,955 W Allegheny Ave,Philadelphia,19144,(267) 555-5518,info@patelhouseyouthcenterpan.example.org,Active
+1021,Green Crust Bakehouse,donor,6859 Ridge Ave,Philadelphia,19131,(215) 555-2091,donate@greencrustbakehouse.example.org,active
+1496,Red Brick Lantern Catering Co.,DONOR,1039 N Broad St,Philadelphia,19141,(267) 555-0116,donate@redbricklanterncateringc.example.org,Active
+1540,Rittenhouse Inn,donor,1651 Washington Ave,Philadelphia,19121,(267) 555-7734,donate@rittenhouseinn.example.org, active
+1546,Murphy House Outreach Kitchen,recipient,532 Girard Ave,Philadelphia,19122,(215) 555-9723,info@murphyhouseoutreachkitch.example.org,ACTIVE
+1337,Tran's Bistro,donor,585 Arch St,Philadelphia,19134,(215) 555-7935,donate@transbistro.example.org,INACTIVE
+1453,Washington Square Family Shelter,recipient,9641 Germantown Ave,Philadelphia,19133.0,(267) 555-3143,info@washingtonsquarefamilysh.example.org,ACTIVE
+1384,Fairmount Mutual Aid Pantry,recipient,5628 Vine St,"Philadelphia, PA",19122,(267) 555-0345,info@fairmountmutualaidpantry.example.org, active
+1218,Nguyen Family Farm,donor,2102 N Broad St,Philadelphia,19120,(445) 555-0620,donate@nguyenfamilyfarm.example.org,ACTIVE
+1299,Old Mill Crust Bakehouse,donor,7239 Vine St,Philadelphia,19144,(215) 555-4515,donate@oldmillcrustbakehouse.example.org,ACTIVE
+1477,Iron Lantern Trattoria,donor,3113 Arch St,Philadelphia, 19111,(445) 555-4358,donate@ironlanterntrattoria.example.org,active
+1003,Singh House Mutual Aid Pantry,recipient,3034 E Passyunk Ave,Philadelphia,19151,(445) 555-4998,info@singhhousemutualaidpantr.example.org,Active
+1096,Old City Farmers Market Stand,DONOR,8594 Chestnut St,Philadelphia,19152,(445) 555-2651,donate@oldcityfarmersmarketstan.example.org, active
+1180,Holmesburg Women's Shelter,recipient,7997 N Broad St,Philadelphia,19142,(267) 555-9993,info@holmesburgwomensshelter.example.org, active
+1080,Silver Fork Trattoria,donor,9134 Frankford Ave,Philadelphia,19149,(215) 555-0610,donate@silverforktrattoria.example.org,active
+1329,Bustleton Parish Kitchen,both,9519 Market St,PHILADELPHIA,19106,(445) 555-7820,donate@bustletonparishkitchen.example.org,active
+1109,Abboud's Diner,donor,9725 Kensington Ave,Philadelphia,19104,(445) 555-0498,donate@abboudsdiner.example.org,Active
+1126,Mayfair Noodle House,Donor,5506 E Erie Ave,Philadelphia,19129,(445) 555-2998,donate@mayfairnoodlehouse.example.org,Active
+1081,Red Brick Oven Bakery,donor,7002 N Broad St,Philadelphia,19138,(215) 555-9966,donate@redbrickovenbakery.example.org, active
+1409,Mt. Airy Food Co-op,donor,3480 Castor Ave,Philadelphia,19147,(445) 555-8859,donate@mtairyfoodcoop.example.org,active
+1419,The Little Spoon,donor,1726 N 22nd St,Philadelphia,19125,(445) 555-3309,donate@thelittlespoon.example.org,ACTIVE
+1193,Golden Masjid Food Ministry,both,6478 N Broad St,Philadelphia,19102,(215) 555-2911,donate@goldenmasjidfoodministry.example.org,ACTIVE
+1309,Hunting Park Neighborhood Center,BOTH,5607 Race St,Philadelphia,19106,(267) 555-3745,donate@huntingparkneighborhoodc.example.org,Inactive
+1041,Novak Family Grocers,donor,6515 Bustleton Ave,Philadelphia,19104,(267) 555-0977,donate@novakfamilygrocers.example.org, active
+1487,Red Brick Pot Bistro,donor,5351 W Chelten Ave,Philadelphia,19151,(267) 555-6932,donate@redbrickpotbistro.example.org,active
+1130,The Rusty Table,donor,9071 N 63rd St,Philadelphia,19106,(267) 555-8046,donate@therustytable.example.org,ACTIVE
+1457,Delgado's Bistro,donor,6086 Chestnut St,Philadelphia,19137,(215) 555-7858,donate@delgadosbistro.example.org, active
+1642,The Maple Kettle,donor,1001 Frankford Ave,Philadelphia,19111,(445) 555-9362,donate@themaplekettle.example.org,ACTIVE
+1223,Graduate Hospital Events & Catering,donor,1934 Pine St,Philadelphia,19103,(445) 555-7834,donate@graduatehospitaleventsca.example.org, active
+1194,Cobblestone Spoon Bistro,donor,9802 Lancaster Ave,Philadelphia,19103.0,(267) 555-2200,donate@cobblestonespoonbistro.example.org,ACTIVE
+1370,Harvest Community Hospital Cafeteria,donor,3825 Castor Ave,"Philadelphia, PA",19102,(215) 555-0934,donate@harvestcommunityhospital.example.org, active
+1596,Juniata Suites,donor,4183 N Broad St,Philadelphia,19104,(215) 555-3850,donate@juniatasuites.example.org,active
+1634,Copper Basket Supermarket,donor,8097 Spring Garden St,Philadelphia,19103,(267) 555-6046,donate@copperbasketsupermarket.example.org,Active
+1683,rusty community hospital cafeteria,donor,9357 Kensington Avenue,Philadelphia,19147,,donate@rustycommunityhospitalca.example.org,active
+1532,Brennan House Recovery House,recipient,4904 Lancaster Ave,Philadelphia,19121,(267) 555-2053,info@brennanhouserecoveryhous.example.org,ACTIVE
+1539,The Harvest Kettle,donor,4709 Castor Ave,Phila,19102,(445) 555-3659,donate@theharvestkettle.example.org,ACTIVE
+1257,Byrne's Eatery,donor,8251 Arch St,Philadelphia,19102,(215) 555-9347,donate@byrneseatery.example.org,Active
+1560,Fern Rock Mutual Aid Pantry,recipient,6451 N 5th St,Philadelphia,19134,(267) 555-7993,info@fernrockmutualaidpantry.example.org,ACTIVE
+1043,Hungry Community Garden,both,4746 N 22nd St,PHILADELPHIA,19107,(215) 555-2542,donate@hungrycommunitygarden.example.org,active
+1424,Spruce Hill Women's Shelter,recipient,8023 E Erie Ave,Philadelphia,19140,(445) 555-1257,info@sprucehillwomensshelter.example.org, active
+1643,Green Spoon Trattoria,donor,9617 N 63rd St,Philadelphia,19142,(267) 555-6970,donate@greenspoontrattoria.example.org,ACTIVE
+1142,Rusty Synagogue Kitchen,both,9000 Market St,Philadelphia,19122,(445) 555-6870,donate@rustysynagoguekitchen.example.org,INACTIVE
+1512,Murphy's Deli & Grocery,donor,3618 Lancaster Ave,Philadelphia,19103,(215) 555-1217,donate@murphysdeligrocery.example.org,active
+1517,Williams Family Grocers,donor,217 N 5th St,Philadelphia,19103,(267) 555-4496,donate@williamsfamilygrocers.example.org,ACTIVE
+1213,Port Richmond Inn,donor,5315 Washington Ave,Philadelphia,19137,(215) 555-8415,donate@portrichmondinn.example.org, active
+1612,Novak House Family Shelter,recipient,4993 S 52nd St,Philadelphia,19121,(215) 555-4268,info@novakhousefamilyshelter.example.org,ACTIVE
+1456,Overbrook Hotel,DONOR,637 N 63rd St,Philadelphia,19121,(445) 555-3086,donate@overbrookhotel.example.org, active
+1091,Grays Ferry Food Co-op,DONOR,7059 E Passyunk Ave,Philadelphia,19134,(215) 555-4696,donate@graysferryfoodcoop.example.org,ACTIVE
+1624,Tioga Halal Grill,donor,5821 Spring Garden St,Philadelphia,19123,(215) 555-2777,donate@tiogahalalgrill.example.org, active
+1013,Hungry Men's Shelter,recipient,9472 Main St,Philadelphia,19144,(215) 555-5055,info@hungrymensshelter.example.org,Active
+1105,Lopez Family Farm,donor,401 Chestnut St,Philadelphia,19107,(267) 555-0159,donate@lopezfamilyfarm.example.org,active
+1443,Corner Crust Bakehouse,donor,5620 W Lehigh Ave,Philadelphia,19138,(445) 555-5196,donate@cornercrustbakehouse.example.org,ACTIVE
+1561,Brewerytown Recovery House,recipient,9096 Pine St,Philadelphia,19133,(445) 555-6909,info@brewerytownrecoveryhouse.example.org,Active
+1362,Hungry Pot Cantina,donor,6562 Snyder Ave,Philadelphia,19129,(267) 555-2196,donate@hungrypotcantina.example.org, active
+1097,Rossi House Food Pantry,recipient,3213 South St,Philadelphia,19134,(267) 555-7038,info@rossihousefoodpantry.example.org,active
+1026,Maple Hearth Eatery,DONOR,931 Girard Ave,Philadelphia,19147,(267) 555-3843,donate@mapleheartheatery.example.org, active
+1675,The Red Brick Oven,donor,5563 Girard Ave Suite 332,Philadelphia,19146,,donate@theredbrickoven.example.org,Active
+1677,Frankofrd Pho,donor,5452 Oregon Ave Suite 3,Philadelphia,19119,(267) 555-4173,donate@frankfordpho.example.org,Active
+1525,The Red Brick Table,donor,2185 Main St,Philadelphia,19122,(215) 555-0670,donate@theredbricktable.example.org, active
+1407,The Lucky Fork,donor,9875 Kensington Ave,Philadelphia,19120,(215) 555-6757,donate@theluckyfork.example.org,Active
+1593,Queen Village Events & Catering,donor,3891 N 5th St,Philadelphia,19107,(215) 555-2278,donate@queenvillageeventscateri.example.org, active
+1333,Bianchi's Bistro,donor,8848 Bustleton Ave,Philadelphia,19102,(267) 555-4820,donate@bianchisbistro.example.org,ACTIVE
+1494,Moreno House Men's Shelter,recipient,3194 Lancaster Ave,Philadelphia,19152,(267) 555-5595,info@morenohousemensshelter.example.org, active
+1260,Silver Food Pantry,recipient,299 Washington Ave,Philadelphia,19125,(445) 555-4787,info@silverfoodpantry.example.org,ACTIVE
+1653,Chen Family Grocers,donor,3218 Pine St,Philadelphia, 19107,(215) 555-2084,donate@chenfamilygrocers.example.org,active
+1291,Riverside Food Distributors,donor,6326 Ridge Ave,Philadelphia,19104,(215) 555-0389,donate@riversidefooddistributor.example.org, active
+1361,Blue Mini Mart,DONOR,2632 Aramingo Ave,Philadelphia, 19123,(215) 555-2923,donate@blueminimart.example.org,Active
+1225,Blue Student Pantry,recipient,6414 W Allegheny Ave,Philadelphia,19123.0,(267) 555-6037,info@bluestudentpantry.example.org,Active
+1673,  Valley Food Distributors ,donor,7170 ARCH ST,Philadelphia,19154,(267) 555-9827,donate@valleyfooddistributors.example.org,ACTIVE
+1441,Golden Keystone Food Supply,donor,318 Market St,Philadelphia,19127,(445) 555-4907,donate@goldenkeystonefoodsupply.example.org,ACTIVE
+1217,Tran's Eatery,Donor,6587 Baltimore Ave,Philadelphia,19125,(267) 555-1151,donate@transeatery.example.org,ACTIVE
+1410,Moreno House Youth Center Pantry,recipient,3386 Baltimore Ave,Philadelphia, 19111,(215) 555-1823,info@morenohouseyouthcenterpa.example.org,ACTIVE
+1185,Little Skillet Cantina,donor,7445 Kensington Ave,PHILADELPHIA,19130,(267) 555-6777,donate@littleskilletcantina.example.org, active
+1376,Rusty Oven Bakery,donor,1161 Ridge Ave,Philadelphia,19136,(445) 555-3759,donate@rustyovenbakery.example.org,ACTIVE
+1658,  Brewerytown Recovery House ,recipient,9096 PINE ST,Philadelphia,19133,(445) 555-6909,info@brewerytownrecoveryhouse.example.org,active
+1607,Sunny Parish Kitchen,both,5049 Girard Ave,Philadelphia,19131,(267) 555-7780,donate@sunnyparishkitchen.example.org,Inactive
+1406,Okafor's Bistro,donor,9303 W Allegheny Ave,Philadelphia,19125,(267) 555-4029,donate@okaforsbistro.example.org,active
+1248,Moreno's Bistro,DONOR,8922 Fairmount Ave,Philadelphia, 19126,(267) 555-6537,donate@morenosbistro.example.org,active
+1687,FXO CHASE PIZZA CO.,donor,9688 Spruce St Suite 381,Philadelphia,19142,,donate@foxchasepizzaco.example.org, active
+1668,homlesburg outreach kitchen,recipient,1809 Torresdale Ave,Philadelphia,19142,(445) 555-3816,info@holmesburgoutreachkitche.example.org,Active
+1144,Abboud's Cantina,donor,713 N 22nd St,Philadelphia,19104,(215) 555-6462,donate@abboudscantina.example.org,ACTIVE
+1088,Mayfair Hotel,donor,6985 Washington Ave,Philadelphia,19125,(267) 555-0145,donate@mayfairhotel.example.org, active
+1085,Chen's Cantina,donor,7675 Race St,Phila,19136,(445) 555-1347,donate@chenscantina.example.org,active
+1590,Somerton Fresh Market,donor,5401 E Erie Ave,Philadelphia,19103,(267) 555-9153,donate@somertonfreshmarket.example.org,active
+1465,Chen Wholesale Foods,donor,3249 N Broad St,Philadelphia,19151,(267) 555-7300,donate@chenwholesalefoods.example.org,Active
+1189,Kingsessing Events & Catering,donor,6586 Oregon Ave,Philadelphia,19103,(215) 555-9395,donate@kingsessingeventscaterin.example.org,ACTIVE
+1404,Hungry Spoon Catering Co.,Donor,3884 E Passyunk Ave,Philadelphia,19147.0,(267) 555-2272,donate@hungryspooncateringco.example.org, active
+1638,Roxborough Men's Shelter,RECIPIENT,1986 South St,Philadelphia,19131,(215) 555-3548,info@roxboroughmensshelter.example.org,Active
+1625,Golden Basket Supermarket,donor,7544 Pine St,Philadelphia,19125,(267) 555-1837,donate@goldenbasketsupermarket.example.org,Active
+1159,Red Brick Senior Living Cafeteria,donor,2638 South St,Philadelphia,19107,(267) 555-0837,donate@redbrickseniorlivingcafe.example.org,Active
+1451,The Little Fork,donor,1952 South St,Philadelphia,19153,(445) 555-2174,donate@thelittlefork.example.org,Active
+1164,Ali Family Grocers,donor,4798 Germantown Ave,Philadelphia,19107,(215) 555-9374,donate@alifamilygrocers.example.org,active
+1630,Silver Crust Bakehouse,donor,4072 E Passyunk Ave,Philadelphia,19107,(215) 555-8464,donate@silvercrustbakehouse.example.org, active
+1115,Bridesburg University Campus Dining Services,donor,5169 N 5th St,Philadelphia,19107,(215) 555-6079,donate@bridesburguniversitycamp.example.org,ACTIVE
+1295,Rusty Basket Supermarket,donor,8618 Kensington Ave,Philadelphia,19106,(215) 555-8072,donate@rustybasketsupermarket.example.org, active
+1392,Moreno Wholesale Foods,donor,3744 Woodland Ave,Philadelphia,19154,(445) 555-7991,donate@morenowholesalefoods.example.org,ACTIVE
+1327,The Hungry Guest House,donor,5453 Race St,Philadelphia,19130-8092,(267) 555-1779,donate@thehungryguesthouse.example.org,Active
+1282,Maple University Campus Cafeteria,donor,9521 Torresdale Ave,Philadelphia,19103,(445) 555-6994,donate@mapleuniversitycampuscaf.example.org,Active
+1084,Frankford Food Co-op,donor,2904 W Chelten Ave,Philadelphia, 19145,(215) 555-9762,donate@frankfordfoodcoop.example.org, inactive
+1566,Rusty Community Garden,both,6873 W Chelten Ave,Philadelphia,19130,(215) 555-8384,donate@rustycommunitygarden.example.org,Active
+1580,Fishtown Community Kitchen,recipient,8184 N Broad St,Philadelphia,19139,(215) 555-8050,info@fishtowncommunitykitchen.example.org,Active
+1659,SCHMIDT'S BISTRO,DONOR,8596 Bustleton Ave.,Phila,19127,,donate@schmidtsbistro.example.org,active
+1452,Rusty Youth Center Pantry,recipient,4815 Washington Ave,Philadelphia,19144,(445) 555-2191,info@rustyyouthcenterpantry.example.org,Active
+1107,Copper Women's Shelter,recipient,245 Ridge Ave,Philadelphia,19144,(267) 555-9501,info@copperwomensshelter.example.org,Active
+1242,DiMarco's Bakery,donor,9822 N Broad St,Philadelphia,19104,(445) 555-7952,donate@dimarcosbakery.example.org,active
+1316,Abboud Family Grocers,donor,2917 Haverford Ave,Philadelphia,19146,(445) 555-6647,donate@abboudfamilygrocers.example.org, active
+1241,Harvest Medical Center Cafeteria,Donor,309 South St,Philadelphia,19106,(267) 555-7767,donate@harvestmedicalcentercafe.example.org, active
+1572,Sunny Spoon Kitchen,donor,8522 S Broad St,Philadelphia,19130,(215) 555-5272,donate@sunnyspoonkitchen.example.org,Active
+1667,oak lane smokehouse,Donor,8804 Baltimore Ave Suite 87,Philadelphia,19126,(445) 555-9222,donate@oaklanesmokehouse.example.org, active
+1640,Brewerytown Medical Center Dining Services,donor,6714 Race St,Philadelphia,19123,(445) 555-8457,donate@brewerytownmedicalcenter.example.org,Active
+1156,Reyes House Men's Shelter,recipient,1802 W Allegheny Ave,Philadelphia,19102,(445) 555-2156,info@reyeshousemensshelter.example.org,ACTIVE
+1278,The Rusty Lantern,donor,9528 N 22nd St,Philadelphia,19102,(267) 555-8149,donate@therustylantern.example.org,ACTIVE
+1168,Blue Family Shelter,recipient,1647 Ridge Ave,Philadelphia,19142,(215) 555-9863,info@bluefamilyshelter.example.org,ACTIVE
+1319,O'Brien Catering,DONOR,9527 S 9th St,Philadelphia,19125,(267) 555-2109,donate@obriencatering.example.org,Active
+1484,Cobblestone Food Pantry,recipient,8842 Woodland Ave,Philadelphia,19149,(267) 555-5162,info@cobblestonefoodpantry.example.org,ACTIVE
+1421,Holmesburg Pizza Co.,donor,2352 South St,Philadelphia,19129,(267) 555-4254,donate@holmesburgpizzaco.example.org,INACTIVE
+1381,Germantown Food Co-op,donor,646 Oregon Ave,Philadelphia,19129,(445) 555-9365,donate@germantownfoodcoop.example.org,ACTIVE
+1464,Silver Parish Kitchen,both,7194 Cottman Ave,Phila,19107,(445) 555-6570,donate@silverparishkitchen.example.org, active
+1247,Logan Square Food Co-op,donor,6305 N 5th St,Philadelphia,19128,(267) 555-5921,donate@logansquarefoodcoop.example.org,ACTIVE
+1028,Mantua Fresh Market,donor,1034 Spruce St,Philadelphia,19111.0,(215) 555-3882,donate@mantuafreshmarket.example.org,active
+1258,Chestnut Hill Taqueria,donor,4877 Race St,Philadelphia,19102,(215) 555-0120,donate@chestnuthilltaqueria.example.org,Active
+1444,Ali's Grill,donor,2758 Germantown Ave,Philadelphia,19126,(215) 555-8968,donate@alisgrill.example.org,Active
+1014,Blue Community Kitchen,recipient,3479 E Passyunk Ave,Philadelphia,19138,(215) 555-1161,info@bluecommunitykitchen.example.org,active
+1331,Mantua Corporate Center Dining Services,Donor,171 Woodland Ave,Philadelphia,19127,(215) 555-7520,donate@mantuacorporatecenterdin.example.org, active
+1120,The Cobblestone Kettle,donor,6138 Spring Garden St,Phila,19140,(267) 555-3792,donate@thecobblestonekettle.example.org,INACTIVE
+1232,Bella Vista Taqueria,donor,3715 Arch St,Phila,19147,(215) 555-5266,donate@bellavistataqueria.example.org,ACTIVE
+1426,Fairmount Inn,donor,4294 Girard Ave,Philadelphia,19102,(215) 555-6306,donate@fairmountinn.example.org, active
+1205,Maple Food Pantry,recipient,1228 N 22nd St,PHILADELPHIA, 19136,(267) 555-0812,info@maplefoodpantry.example.org,active
+1389,Old Mill Synagogue Kitchen,both,162 Vine St,Philadelphia,19123,(215) 555-6256,donate@oldmillsynagoguekitchen.example.org,Active
+1274,Silver Lantern Trattoria,donor,1490 Snyder Ave,Philadelphia,19104,(445) 555-8987,donate@silverlanterntrattoria.example.org,active
+1079,Maple Oven Bakery,donor,7090 Woodland Ave,Philadelphia, 19148,(215) 555-9203,donate@mapleovenbakery.example.org, active
+1651,Somerton Suites,donor,6906 Torresdale Ave,Philadelphia,19139,(267) 555-6587,donate@somertonsuites.example.org, active
+1302,Kowalski Catering,donor,9416 N Broad St,Philadelphia,19102,(215) 555-6096,donate@kowalskicatering.example.org,active
+1654,Romano House Women's Shelter,RECIPIENT,3024 Washington Ave,Philadelphia,19135,(215) 555-9928,info@romanohousewomensshelter.example.org,active
+1388,Red Brick Basket Supermarket,donor,2805 W Lehigh Ave,Philadelphia,19106,(267) 555-7646,donate@redbrickbasketsupermarke.example.org,Active
+1276,Cohen's Bistro,donor,3990 Bustleton Ave,Philadelphia,19144,(215) 555-5485,donate@cohensbistro.example.org, active
+1261,Copper Spoon Trattoria,donor,6265 N 5th St,Philadelphia,19125,(267) 555-6234,donate@copperspoontrattoria.example.org,INACTIVE
+1103,Holmesburg Bread Co.,donor,5293 Washington Ave,Philadelphia,19103,(215) 555-2701,donate@holmesburgbreadco.example.org, active
+1087,DiMarco House Family Shelter,recipient,1381 Castor Ave,Philadelphia, 19103,(215) 555-8658,info@dimarcohousefamilyshelte.example.org,active
+1492,Logan Square Smokehouse,donor,5263 Girard Ave,Philadelphia,19115,(267) 555-5125,donate@logansquaresmokehouse.example.org,active
+1117,Nicetown Community Garden,Both,595 Main St,Philadelphia,19153,(267) 555-1795,donate@nicetowncommunitygarden.example.org,Active
+1417,Brewerytown Halal Grill,Donor,2484 Market St,PHILADELPHIA,19148,(267) 555-5680,donate@brewerytownhalalgrill.example.org, active
+1209,Olney Farmers Market Stand,donor,5173 Aramingo Ave,Philadelphia,19126,(267) 555-6239,donate@olneyfarmersmarketstand.example.org,Active
+1290,Tioga Corporate Center Dining Services,donor,8408 Castor Ave,Philadelphia,19124,(445) 555-1805,donate@tiogacorporatecenterdini.example.org,Active
+1378,Moreno's Grill,donor,7980 Snyder Ave,Philadelphia,19103,(215) 555-9822,donate@morenosgrill.example.org,Active
+1567,The Silver Lantern,donor,2747 Market St,Philadelphia,19144.0,(267) 555-0583,donate@thesilverlantern.example.org, active
+1648,Mt. Airy Fresh Market,donor,211 N 63rd St,Philadelphia,19154,(267) 555-8858,donate@mtairyfreshmarket.example.org,ACTIVE
+1437,The Corner Skillet,donor,8903 Vine St,Philadelphia,19125,(445) 555-1691,donate@thecornerskillet.example.org, active
+1670,Delgado Family Farm LLC,donor,5641 N BROAD ST,Philadelphia,19106,,donate@delgadofamilyfarm.example.org,ACTIVE
+1582,Moreno House Women's Shelter,recipient,6810 Snyder Ave,Philadelphia,19134,(215) 555-1403,info@morenohousewomensshelter.example.org, active
+1244,Washington Square Mutual Aid Pantry,recipient,6944 Castor Ave,Philadelphia,19121,(215) 555-4527,info@washingtonsquaremutualai.example.org,active
+1442,Mt. Airy Senior Living Dining Services,DONOR,4520 Walnut St,Philadelphia,19107,(267) 555-8785,donate@mtairyseniorlivingdining.example.org,active
+1461,Schmidt Family Farm,donor,9535 Kensington Ave,Philadelphia,19104,(267) 555-1176,donate@schmidtfamilyfarm.example.org,Active
+1267,Haddad House Youth Center Pantry,recipient,3786 Oregon Ave,PHILADELPHIA,19139,(215) 555-9666,info@haddadhouseyouthcenterpa.example.org,ACTIVE
+1069,Little Food Pantry,recipient,107 Castor Ave,Philadelphia,19146,(267) 555-7905,info@littlefoodpantry.example.org, active
+1603,Logan Fresh Market,donor,7715 N 22nd St,PHILADELPHIA,19106,(215) 555-0072,donate@loganfreshmarket.example.org,active
+1148,Copper Medical Center Cafeteria,donor,5116 Lancaster Ave,Philadelphia,19118,(267) 555-4179,donate@coppermedicalcentercafet.example.org,ACTIVE
+1544,Germantown Neighborhood Center,BOTH,3037 W Chelten Ave,Philadelphia,19123,(267) 555-3251,donate@germantownneighborhoodce.example.org,Inactive
+1597,Cohen House Family Shelter,recipient,8273 Race St,Philadelphia,19148,(215) 555-7674,info@cohenhousefamilyshelter.example.org,active
+1631,Copper Liberty Food Supply,donor,7391 S 9th St,Philadelphia,19116,(215) 555-6642,donate@copperlibertyfoodsupply.example.org,active
+1555,Old City Grill,donor,6310 Market St,Philadelphia,19103.0,(215) 555-6387,donate@oldcitygrill.example.org,active
+1022,Whitman Taqueria,donor,5360 Snyder Ave,Philadelphia,19111,(267) 555-3613,donate@whitmantaqueria.example.org,ACTIVE
+1111,Mayfair Youth Center Pantry,recipient,2063 Baltimore Ave,Philadelphia,19146,(215) 555-3395,info@mayfairyouthcenterpantry.example.org,active
+1072,Lawncrest Fresh Market,donor,567 S 9th St,Philadelphia,19107,(445) 555-4014,donate@lawncrestfreshmarket.example.org, active
+1066,Walsh Wholesale Foods,Donor,5727 E Erie Ave,Philadelphia,19147,(215) 555-9080,donate@walshwholesalefoods.example.org,ACTIVE
+1360,Okafor Family Farm,donor,8906 Torresdale Ave,Philadelphia,19147,(267) 555-0239,donate@okaforfamilyfarm.example.org,active
+1082,Harvest Basket Supermarket,DONOR,1828 Main St,Philadelphia,19115,(267) 555-7778,donate@harvestbasketsupermarket.example.org,Active
+1524,Bella Vista Fresh Market,donor,5247 Lancaster Ave,Philadelphia,19147,(215) 555-4579,donate@bellavistafreshmarket.example.org,inactive
+1586,Golden Valley Food Supply,donor,3542 Girard Ave,Philadelphia,19125,(267) 555-2648,donate@goldenvalleyfoodsupply.example.org,active
+1516,Sunny Pot Bistro,donor,3750 Germantown Ave,Philadelphia,19107,(215) 555-9006,donate@sunnypotbistro.example.org,Active
+1226,Whitman Corner Market,donor,4599 N 63rd St,Philadelphia,19130,(445) 555-7329,donate@whitmancornermarket.example.org, inactive
+1435,Fairmount Smokehouse,Donor,4727 Kensington Ave,Philadelphia,19128,(267) 555-9627,donate@fairmountsmokehouse.example.org, inactive
+1663,Hungry Spoon Kitchen,donor,8991 Walnut St Suite 110,Philadelphia,19154,(267) 555-3977,donate@hungryspoonkitchen.example.org,Active
+1176,Bustleton Taqueria,DONOR,5833 N 5th St,Philadelphia,19140,(215) 555-4344,donate@bustletontaqueria.example.org,active
+1024,Nicetown Fresh Market,donor,2265 Washington Ave,PHILADELPHIA,19114,(215) 555-7464,donate@nicetownfreshmarket.example.org,Active
+1332,Silver Senior Living Cafeteria,donor,5719 Castor Ave,Philadelphia,19146,(215) 555-3787,donate@silverseniorlivingcafete.example.org, active
+1191,Silver Kettle Trattoria,donor,8094 S 52nd St,Philadelphia,19103,(267) 555-2654,donate@silverkettletrattoria.example.org, active
+1136,Kingsessing Fresh Market,donor,2158 Frankford Ave,Philadelphia,19115,(215) 555-9116,donate@kingsessingfreshmarket.example.org,ACTIVE
+1150,Little Crust Bakehouse,donor,1791 Oregon Ave,Philadelphia,19102,(445) 555-8419,donate@littlecrustbakehouse.example.org,ACTIVE
+1298,Haddad Catering,donor,3705 Snyder Ave,Philadelphia,19139,(267) 555-6802,donate@haddadcatering.example.org,active
+1347,Sullivan's Grill,Donor,2230 W Chelten Ave,Philadelphia,19103,(215) 555-8379,donate@sullivansgrill.example.org, active
+1034,Lucky Corporate Center Cafeteria,donor,649 S 9th St,Philadelphia,19107,(445) 555-4922,donate@luckycorporatecentercafe.example.org, active
+1518,Maple Recovery House,recipient,3692 Race St,Philadelphia,19144,(215) 555-5229,info@maplerecoveryhouse.example.org,ACTIVE
+1433,Lucky Oven Eatery,donor,4838 Vine St,Philadelphia,19107,(445) 555-7458,donate@luckyoveneatery.example.org, active
+1394,The Lucky Guest House,DONOR,3136 S 9th St,Philadelphia,19106,(215) 555-8112,donate@theluckyguesthouse.example.org,ACTIVE
+1606,Green Pot Catering Co.,donor,6195 South St,Philadelphia,19106,(445) 555-7721,donate@greenpotcateringco.example.org,Active
+1395,Red Brick Mini Mart,donor,4792 W Chelten Ave,Philadelphia,19102,(267) 555-8914,donate@redbrickminimart.example.org, active
+1626,Wissinoming Food Co-op,donor,8042 E Passyunk Ave,Philadelphia,19107,(445) 555-7056,donate@wissinomingfoodcoop.example.org, active
+1178,Romano House Family Shelter,recipient,5926 W Chelten Ave,Philadelphia,19151,(445) 555-0898,info@romanohousefamilyshelter.example.org,ACTIVE
+1297,Copper Senior Living Cafeteria,donor,4045 Girard Ave,"Philadelphia, PA",19141,(267) 555-6224,donate@copperseniorlivingcafete.example.org, active
+1534,Harvest Mutual Aid Pantry,recipient,6151 S 9th St,Philadelphia,19150,(267) 555-7790,info@harvestmutualaidpantry.example.org,Active
+1386,Sunny Men's Shelter,recipient,8256 N 22nd St,Philadelphia,19123,(267) 555-8394,info@sunnymensshelter.example.org,Inactive
+1020,Washington Square Bread Co.,Donor,4092 Walnut St,Philadelphia,19103,(445) 555-1030,donate@washingtonsquarebreadco.example.org,Active
+1385,Nicetown Youth Center Pantry,recipient,6269 Walnut St,Philadelphia,19123,(267) 555-2192,info@nicetownyouthcenterpantr.example.org, active
+1215,Novak Wholesale Foods,Donor,1087 N 5th St,Philadelphia,19131.0,(215) 555-0596,donate@novakwholesalefoods.example.org, active
+1234,The Red Brick Suites,donor,6419 Arch St,Philadelphia,19125,(215) 555-5983,donate@theredbricksuites.example.org,active
+1617,Corner Community Hospital Cafeteria,donor,5516 Main St,Philadelphia,19125,(445) 555-3420,donate@cornercommunityhospitalc.example.org, active
+1192,The Lucky Suites,donor,6561 Walnut St,Philadelphia,19103,(267) 555-5529,donate@theluckysuites.example.org,Active
+1387,Rusty Pot Diner,Donor,8758 Market St,Philadelphia,19103,(445) 555-5360,donate@rustypotdiner.example.org,active
+1545,Moreno House Family Shelter,recipient,206 S 9th St,Philadelphia,19120,(215) 555-8619,info@morenohousefamilyshelter.example.org,active
+1172,Fairmount Fresh Market,donor,408 Cottman Ave,PHILADELPHIA,19125,(445) 555-2474,donate@fairmountfreshmarket.example.org, active
+1354,Roxborough Pho,donor,8605 Arch St,Philadelphia,19129,(445) 555-7034,donate@roxboroughpho.example.org, active
+1134,Bianchi Wholesale Foods,donor,3238 Washington Ave,Philadelphia, 19147,(267) 555-1013,donate@bianchiwholesalefoods.example.org,active
+1551,Harvest Oven Bakery,donor,6571 E Passyunk Ave,Philadelphia,19133,(267) 555-8130,donate@harvestovenbakery.example.org,ACTIVE
+1187,The Iron Hearth,donor,5309 N 63rd St,Philadelphia,19147,(215) 555-4108,donate@theironhearth.example.org,active
+1565,Sunny College Cafeteria,donor,9357 Kensington Ave,Philadelphia,19130,(267) 555-3637,donate@sunnycollegecafeteria.example.org, active
+1399,Frankford Medical Center Dining Services,donor,6776 W Allegheny Ave,Philadelphia,19147,(215) 555-0304,donate@frankfordmedicalcenterdi.example.org,ACTIVE
+1009,The Iron Hotel,donor,7433 Castor Ave,Philadelphia,19103,(445) 555-5622,donate@theironhotel.example.org,ACTIVE
+1412,Point Breeze Food Pantry,recipient,8521 Race St,Philadelphia,19124.0,(267) 555-7621,info@pointbreezefoodpantry.example.org,active
+1089,Juniata Men's Shelter,recipient,3311 Race St,Philadelphia, 19128,(445) 555-1764,info@juniatamensshelter.example.org,ACTIVE
+1047,Patel Family Grocers,donor,8021 Aramingo Ave,Philadelphia, 19139,(215) 555-7344,donate@patelfamilygrocers.example.org, active
+1284,Sunny Crust Bakehouse,donor,9761 Chestnut St,Phila,19107,(267) 555-0479,donate@sunnycrustbakehouse.example.org, active
+1600,Red Brick Crust Bakehouse,donor,3172 Snyder Ave,Philadelphia,19124-9667,(445) 555-7173,donate@redbrickcrustbakehouse.example.org,ACTIVE
+1229,Eastwick Food Co-op,donor,9847 Aramingo Ave,Philadelphia,19107,(215) 555-5520,donate@eastwickfoodcoop.example.org, active
+1325,Overbrook College Dining Services,donor,9296 Market St,Philadelphia,19122,(215) 555-4618,donate@overbrookcollegediningse.example.org,Active
+1207,Lucky Oven Bakery,DONOR,7754 Bustleton Ave,Philadelphia,19135,(267) 555-8453,donate@luckyovenbakery.example.org,inactive
+1173,Haddad's Kitchen,donor,5254 Oregon Ave,Philadelphia,19128.0,(267) 555-0195,donate@haddadskitchen.example.org,Active
+1440,Logan Noodle House,donor,7439 Aramingo Ave,Philadelphia,19111,(215) 555-9814,donate@logannoodlehouse.example.org,ACTIVE
+1505,Wynnefield Community Church,both,2912 Main St,Philadelphia,19153,(445) 555-7706,donate@wynnefieldcommunitychurc.example.org,Active
+1380,Hungry Basket Supermarket,donor,8907 Pine St,Philadelphia,19130,(267) 555-2590,donate@hungrybasketsupermarket.example.org,Active
+1509,Silver Hearth Catering Co.,donor,6692 S 52nd St,Philadelphia,19123,(215) 555-3989,donate@silverhearthcateringco.example.org,active
+1070,Red Brick Fork Trattoria,donor,6377 S Broad St,Philadelphia,19133,(445) 555-8023,donate@redbrickforktrattoria.example.org,ACTIVE
+1032,Maple Mini Mart,Donor,5557 Chestnut St,Philadelphia,19103,(215) 555-9091,donate@mapleminimart.example.org, active
+1296,Rivera's Bistro,donor,7488 Main St,Philadelphia,19152,(445) 555-9951,donate@riverasbistro.example.org,active
+1573,Iron Youth Center Pantry,recipient,591 N 63rd St,Philadelphia,19130,(445) 555-4011,info@ironyouthcenterpantry.example.org,INACTIVE
+1439,Cobblestone Mini Mart,donor,9412 Fairmount Ave,Philadelphia,19132,(267) 555-5020,donate@cobblestoneminimart.example.org,active
+1480,Copper Harbor Food Supply,donor,9102 Baltimore Ave,Philadelphia,19104-9907,(267) 555-2156,donate@copperharborfoodsupply.example.org,INACTIVE
+1281,Somerton College Dining Services,donor,7621 S 9th St,Philadelphia,19123,(215) 555-0063,donate@somertoncollegediningser.example.org,Active
+1559,Oak Lane Halal Grill,donor,853 Lancaster Ave,Philadelphia,19140-2905,(445) 555-1115,donate@oaklanehalalgrill.example.org, active
+1129,Sunny Oven Bakery,donor,6800 W Lehigh Ave,Philadelphia,19127,(445) 555-3078,donate@sunnyovenbakery.example.org, active
+1310,Passyunk Food Co-op,donor,5754 Vine St,"Philadelphia, PA",19125,(215) 555-4094,donate@passyunkfoodcoop.example.org,Active
+1163,Corner Harbor Food Supply,donor,3662 Race St,Philadelphia,19125,(267) 555-1588,donate@cornerharborfoodsupply.example.org, inactive
+1102,The Maple Pot,donor,5210 N 5th St,Philadelphia,19127,(445) 555-0174,donate@themaplepot.example.org,ACTIVE
+1425,Reyes Family Grocers,donor,9293 E Passyunk Ave,Philadelphia,19102,(445) 555-5134,donate@reyesfamilygrocers.example.org,active
+1275,The Iron Kettle,donor,4960 N 22nd St,Philadelphia,19132,(445) 555-0176,donate@theironkettle.example.org, active
+1301,Silver Pot Bistro,DONOR,1064 E Erie Ave,Philadelphia,19102,(445) 555-3258,donate@silverpotbistro.example.org, active
+1203,Holmesburg Community Garden,both,7757 W Lehigh Ave,Philadelphia, 19102,(445) 555-8540,donate@holmesburgcommunitygarde.example.org, active
+1423,Silver Basket Supermarket,donor,7915 E Erie Ave,Philadelphia,19123,(267) 555-7638,donate@silverbasketsupermarket.example.org,Active
+1108,Hungry Community Church,both,3798 South St,Philadelphia,19144,(215) 555-2262,donate@hungrycommunitychurch.example.org, active
+1584,Haddad's Grill,donor,942 Walnut St,Philadelphia,19148,(445) 555-2833,donate@haddadsgrill.example.org,ACTIVE
+1535,Williams's Deli & Grocery,donor,7435 Arch St,Philadelphia,19134,(215) 555-5031,donate@williamssdeligrocery.example.org,ACTIVE
+1503,Chestnut Hill Bread Co.,donor,8359 S 52nd St,Philadelphia,19120,(215) 555-3174,donate@chestnuthillbreadco.example.org,active
+1269,Blue Basket Supermarket,Donor,8577 Snyder Ave,Philadelphia,19151,(267) 555-9138,donate@bluebasketsupermarket.example.org, active
+1574,Cohen Catering,donor,7012 Oregon Ave,Philadelphia,19147,(445) 555-9421,donate@cohencatering.example.org,active
+1575,Tioga Cafe,donor,3218 Baltimore Ave,Philadelphia,19123,(267) 555-9105,donate@tiogacafe.example.org,active
+1558,Wissinoming Parish Kitchen,both,8510 Pine St,Philadelphia,19151,(445) 555-6253,donate@wissinomingparishkitchen.example.org,ACTIVE
+1320,Rivera's Eatery,donor,9483 Market St,Philadelphia,19129,(267) 555-7664,donate@riveraseatery.example.org,Active
+1152,Port Richmond Corner Market,donor,9792 Lancaster Ave,Philadelphia,19103,(267) 555-8114,donate@portrichmondcornermarket.example.org,active
+1438,The Blue Kettle,donor,878 Girard Ave,Phila,19148,(267) 555-5975,donate@thebluekettle.example.org,ACTIVE
+1322,Port Richmond Suites,donor,7933 E Passyunk Ave,Philadelphia,19135,(215) 555-0067,donate@portrichmondsuites.example.org, active
+1183,Rivera Family Farm,donor,2571 Main St,Philadelphia,19144,(445) 555-8663,donate@riverafamilyfarm.example.org,active
+1415,Schmidt Catering,donor,4330 S 52nd St,Philadelphia,19148-8790,(267) 555-1561,donate@schmidtcatering.example.org,Active
+1351,Hungry Community Hospital Cafeteria,donor,6795 Race St,Philadelphia,19102,(215) 555-5342,donate@hungrycommunityhospitalc.example.org, active
+1666,Frankford Medical Center Dining Services,donor,6776 W Allegheny Avenue,Philadelphia,19147,(215) 555-0304,donate@frankfordmedicalcenterdi.example.org, active
+1581,Sunny Family Shelter,recipient,8820 Vine St,Philadelphia,19140,(445) 555-6370,info@sunnyfamilyshelter.example.org,ACTIVE
+1233,Blue Mutual Aid Pantry,recipient,2116 Chestnut St,Philadelphia,19139,(445) 555-8099,info@bluemutualaidpantry.example.org,active
+1049,Bridesburg Food Co-op,donor,1952 Frankford Ave,Philadelphia,19120,(445) 555-0863,donate@bridesburgfoodcoop.example.org,ACTIVE
+1680,Point Breeze aFrmers Market Stand,donor,4973 FRANKFORD AVE,Philadelphia,19127,(445) 555-5908,donate@pointbreezefarmersmarket.example.org,ACTIVE
+1678,Chens Cantina,donor,7675 Race St,Philadelphia,19136,,donate@chenscantina.example.org,Active
+1160,The Iron Suites,donor,8977 Girard Ave,Philadelphia,19127,(445) 555-5789,donate@theironsuites.example.org,active
+1227,Holmesburg Fresh Market,donor,1880 Castor Ave,Philadelphia,19140,(267) 555-2635,donate@holmesburgfreshmarket.example.org, active
+1469,Strawberry Mansion Grill,DONOR,8380 Haverford Ave,Philadelphia,19130,(267) 555-8930,donate@strawberrymansiongrill.example.org,ACTIVE
+1224,Callowhill Medical Center Dining Services,donor,299 Kensington Ave,Philadelphia,19123,(267) 555-5153,donate@callowhillmedicalcenterd.example.org,ACTIVE
+1363,Olney Community Church,both,8031 Germantown Ave,Philadelphia,19116,(215) 555-8717,donate@olneycommunitychurch.example.org,active
+1599,Green Keystone Food Supply,donor,6319 Cottman Ave,Philadelphia,19139,(215) 555-5637,donate@greenkeystonefoodsupply.example.org,active
+1002,Murphy's Bakery,DONOR,2597 Spring Garden St,Philadelphia,19123,(215) 555-9614,donate@murphysbakery.example.org, active
+1656,Rusty Basket Supermarket,donor,8618 Kensington Ave Suite 258,Philadelphia,19106,(215) 555-8072,donate@rustybasketsupermarket.example.org,active
+1620,Little University Campus Cafeteria,donor,4189 E Erie Ave,Philadelphia,19134,(215) 555-6645,donate@littleuniversitycampusca.example.org, active
+1501,Nicetown Food Co-op,donor,9886 Haverford Ave,Philadelphia,19128,(215) 555-6743,donate@nicetownfoodcoop.example.org,Active
+1662,KINGSESSING FOOD CO-OP,donor,9653 W Allegheny Ave.,Philadelphia,19123,(267) 555-0255,donate@kingsessingfoodcoop.example.org,active
+1592,Northern Liberties Community Kitchen,recipient,1623 Cottman Ave,Philadelphia,19142,(445) 555-3359,info@northernlibertiescommuni.example.org,active
+1672,Le Wholesal eFoods,donor,2490 Aramingo Avenue,Philadelphia,19150,(267) 555-2457,donate@lewholesalefoods.example.org,ACTIVE
+1138,Brennan Family Farm,Donor,500 Ridge Ave,Phila,19107-8667,(445) 555-4351,donate@brennanfamilyfarm.example.org,Active
+1323,Somerton Bread Co.,donor,4716 Cottman Ave,Philadelphia,19154,(215) 555-7066,donate@somertonbreadco.example.org,ACTIVE
+1083,Juniata Taqueria,donor,3007 Lancaster Ave,Phila,19107,(445) 555-4952,donate@juniatataqueria.example.org,Active
+1007,Northern Liberties Cafe,donor,389 Arch St,Philadelphia,19102,(445) 555-3335,donate@northernlibertiescafe.example.org, active
+1253,Kingsessing Food Co-op,donor,9653 W Allegheny Ave,Philadelphia,19123,(267) 555-0255,donate@kingsessingfoodcoop.example.org,Active
+1075,Sunny Hearth Diner,DONOR,2548 N 63rd St,Philadelphia,19106,(215) 555-8341,donate@sunnyhearthdiner.example.org,Active
+1455,Logan Women's Shelter,recipient,1767 Washington Ave,Philadelphia,19140,(267) 555-2381,info@loganwomensshelter.example.org,Inactive
+1478,Overbrook Guest House,donor,5293 Haverford Ave,Philadelphia,19146,(445) 555-4049,donate@overbrookguesthouse.example.org,ACTIVE
+1405,Old City Food Co-op,Donor,5122 Kensington Ave,Philadelphia,19144,(445) 555-4393,donate@oldcityfoodcoop.example.org,ACTIVE
+1305,Schmidt's Eatery,Donor,2977 Baltimore Ave,Phila,19120.0,(445) 555-4697,donate@schmidtseatery.example.org,ACTIVE
+1548,Rusty Penn Food Supply,donor,7293 E Erie Ave,Philadelphia,19107,(215) 555-9513,donate@rustypennfoodsupply.example.org,ACTIVE
+1259,Delgado House Mutual Aid Pantry,RECIPIENT,7347 Spruce St,Philadelphia,19151,(267) 555-4068,info@delgadohousemutualaidpan.example.org,ACTIVE
+1541,Williams's Kitchen,donor,6725 W Lehigh Ave,Philadelphia,19133,(267) 555-1507,donate@williamsskitchen.example.org,ACTIVE
+1306,Queen Village Masjid Food Ministry,both,1518 South St,Philadelphia,19103,(267) 555-6791,donate@queenvillagemasjidfoodmi.example.org, active
+1211,Rusty Medical Center Cafeteria,donor,2200 Washington Ave,Philadelphia,19149,(445) 555-1351,donate@rustymedicalcentercafete.example.org,active
+1605,Reyes's Deli & Grocery,donor,268 S 52nd St,Philadelphia,19123,(215) 555-1528,donate@reyessdeligrocery.example.org,active
+1578,Sullivan Wholesale Foods,donor,807 Girard Ave,Philadelphia,19107,(267) 555-6442,donate@sullivanwholesalefoods.example.org,active
+1563,Ortiz's Kitchen,donor,1262 Market St,Philadelphia,19107,(267) 555-5736,donate@ortizskitchen.example.org,ACTIVE
+1500,The Maple Oven,donor,8094 N 63rd St,Philadelphia,19103,(215) 555-8450,donate@themapleoven.example.org,ACTIVE
+1507,Blue Oven Bakery,DONOR,5850 Fairmount Ave,Philadelphia, 19104,(445) 555-8666,donate@blueovenbakery.example.org,ACTIVE
+1632,Bustleton Bread Co.,donor,6133 Cottman Ave,Philadelphia,19120-7544,(445) 555-2757,donate@bustletonbreadco.example.org,ACTIVE
+1303,Holmesburg Synagogue Kitchen,both,5347 N 5th St,Philadelphia,19153,(267) 555-5429,donate@holmesburgsynagoguekitch.example.org,Active
+1121,Bustleton Bistro,donor,4530 Market St,Philadelphia,19102,(445) 555-9118,donate@bustletonbistro.example.org, active
+1045,Sunny Pot Catering Co.,Donor,6286 W Lehigh Ave,Philadelphia,19102,(445) 555-4552,donate@sunnypotcateringco.example.org, active
+1660,"The Little Spoon, Inc.",donor,1726 N 22nd Street,Philadelphia,19125,,donate@thelittlespoon.example.org,Active
+1004,Murphy Catering,donor,6655 S 52nd St,Philadelphia,19150,(445) 555-6395,donate@murphycatering.example.org, active
+1254,Little Schuylkill Food Supply,donor,1318 Lancaster Ave,Philadelphia,19104,(267) 555-2340,donate@littleschuylkillfoodsupp.example.org, active
+1005,Germantown Family Shelter,recipient,2977 Snyder Ave,Philadelphia,19135,(267) 555-6748,info@germantownfamilyshelter.example.org,ACTIVE
+1681,Juniata Suites,Donor,4183 N BROAD ST,Philadelphia,19104,(215) 555-3850,donate@juniatasuites.example.org,Active
+1112,Fox Chase Pizza Co.,donor,9688 Spruce St,Philadelphia,19142,(267) 555-2861,donate@foxchasepizzaco.example.org,ACTIVE
+1122,The Rusty Hotel,Donor,2997 Vine St,Philadelphia,19124,(215) 555-1823,donate@therustyhotel.example.org,active
+1468,Brewerytown Events & Catering,donor,5202 Fairmount Ave,Philadelphia,19154,(445) 555-1114,donate@brewerytowneventscaterin.example.org,ACTIVE
+1165,Delgado Family Farm,donor,5641 N Broad St,"Philadelphia, PA",19106,(215) 555-7117,donate@delgadofamilyfarm.example.org,Active
+1339,The Silver Skillet,donor,739 S Broad St,Philadelphia,19125,(445) 555-1179,donate@thesilverskillet.example.org,Active
+1050,Old Mill Basket Supermarket,donor,464 S 9th St,Philadelphia,19126,(215) 555-5207,donate@oldmillbasketsupermarket.example.org,Active
+1170,The Old Mill Ladle,Donor,4759 South St,Philadelphia, 19124,(267) 555-2918,donate@theoldmillladle.example.org, active
+1236,Rivera House Student Pantry,recipient,4265 N 5th St,Philadelphia,19120,(267) 555-9474,info@riverahousestudentpantry.example.org,active
+1321,Old City University Campus Dining Services,donor,1084 Market St,Philadelphia,19107,(445) 555-8288,donate@oldcityuniversitycampusd.example.org,active
+1583,Copper Parish Kitchen,both,1213 W Allegheny Ave,Philadelphia,19123,(445) 555-8195,donate@copperparishkitchen.example.org,active
+1641,The Golden Pot,donor,8210 W Lehigh Ave,Philadelphia,19103,(445) 555-5061,donate@thegoldenpot.example.org,Active
+1029,Rossi Family Grocers,donor,3562 Vine St,Philadelphia,19147,(267) 555-5973,donate@rossifamilygrocers.example.org, active
+1637,Red Brick Parish Kitchen,BOTH,5192 Snyder Ave,Philadelphia,19135,(445) 555-5648,donate@redbrickparishkitchen.example.org, inactive
+1359,Green Acres Farm,donor,5312 N Broad St,PHILADELPHIA,19123,(215) 555-4825,donate@greenacresfarm.example.org, active
+1340,Washington Square Corporate Center Dining Services,Donor,9322 Race St,Philadelphia,19151,(267) 555-6843,donate@washingtonsquarecorporat.example.org,ACTIVE
+1071,Wissinoming Senior Living Dining Services,donor,1146 S Broad St,Philadelphia,19149,(445) 555-5587,donate@wissinomingseniorlivingd.example.org,ACTIVE
+1633,Silver Acres Farm,DONOR,4984 Ridge Ave,Phila,19124,(267) 555-8854,donate@silveracresfarm.example.org,ACTIVE
+1086,The Blue Fork,donor,7302 Walnut St,Philadelphia,19148,(215) 555-5621,donate@thebluefork.example.org,Active
+1314,Red Brick Food Pantry,recipient,3329 Chestnut St,Philadelphia,19124,(267) 555-9014,info@redbrickfoodpantry.example.org,Active
+1649,DiMarco Family Grocers,donor,2495 Ridge Ave,Phila,19102,(215) 555-2970,donate@dimarcofamilygrocers.example.org, inactive
+1615,Red Brick Family Shelter,recipient,6931 South St,Philadelphia,19103,(215) 555-5472,info@redbrickfamilyshelter.example.org, active
+1025,Tran Family Grocers,donor,2350 Spring Garden St,Philadelphia,19133,(215) 555-0527,donate@tranfamilygrocers.example.org,active
+1208,The Red Brick Oven,donor,5563 Girard Ave,Philadelphia,19146,(445) 555-3572,donate@theredbrickoven.example.org,ACTIVE
+1671,Washington Square Food Pantry,recipient,2085 N 5TH ST,Philadelphia,19102,(445) 555-8854,info@washingtonsquarefoodpant.example.org, active
+1346,Green Mini Mart,donor,2541 South St,Philadelphia,19146,(267) 555-0429,donate@greenminimart.example.org, active
+1422,Patel House Mutual Aid Pantry,recipient,6034 W Lehigh Ave,Philadelphia,19142,(445) 555-2552,info@patelhousemutualaidpantr.example.org,Active
+1458,Moreno House Mutual Aid Pantry,recipient,2639 Bustleton Ave,Philadelphia,19139,(445) 555-7241,info@morenohousemutualaidpant.example.org, active
+1379,Iron Basket Supermarket,donor,1075 Castor Ave,Philadelphia,19122,(215) 555-4366,donate@ironbasketsupermarket.example.org, active
+1001,Russo Family Farm,DONOR,797 Market St,Philadelphia,19125,(267) 555-6197,donate@russofamilyfarm.example.org,ACTIVE
+1352,Lopez Wholesale Foods,donor,6488 N 22nd St,Philadelphia,19151,(445) 555-8487,donate@lopezwholesalefoods.example.org, active
+1528,Hungry Oven Bakery,donor,1710 Frankford Ave,Philadelphia,19151,(445) 555-6887,donate@hungryovenbakery.example.org,ACTIVE
+1184,Manayunk Bistro,donor,7985 Castor Ave,Philadelphia,19106,(267) 555-5470,donate@manayunkbistro.example.org,active
+1280,Ali Wholesale Foods,donor,1632 Bustleton Ave,Philadelphia,19136,(215) 555-0434,donate@aliwholesalefoods.example.org,ACTIVE
+1348,Queen Village Taqueria,donor,7961 Baltimore Ave,Philadelphia,19106,(445) 555-0829,donate@queenvillagetaqueria.example.org,ACTIVE
+1366,Walsh Family Grocers,donor,5251 N 22nd St,Philadelphia,19127,(267) 555-8787,donate@walshfamilygrocers.example.org,Active
+1155,Hungry Ladle Catering Co.,DONOR,4106 Main St,PHILADELPHIA,19102.0,(445) 555-5336,donate@hungryladlecateringco.example.org, active
+1271,Maple Pot Diner,donor,6037 Frankford Ave,Philadelphia,19123,(215) 555-1896,donate@maplepotdiner.example.org,ACTIVE
+1550,Corner Oven Grill,donor,5789 W Chelten Ave,"Philadelphia, PA", 19154,(215) 555-6615,donate@cornerovengrill.example.org,active
+1533,Schmidt House Community Kitchen,recipient,8295 N 5th St,Philadelphia,19111,(445) 555-6607,info@schmidthousecommunitykit.example.org,Active
+1100,Logan Square Bread Co.,donor,1465 Kensington Ave,Philadelphia,19153,(267) 555-4957,donate@logansquarebreadco.example.org,active
+1199,Fishtown Food Pantry,recipient,844 Haverford Ave,Philadelphia,19140,(267) 555-8264,info@fishtownfoodpantry.example.org, active
+1262,Grays Ferry Fresh Market,donor,7352 W Allegheny Ave,Phila,19128,(445) 555-7561,donate@graysferryfreshmarket.example.org, active
+1300,Hungry Youth Center Pantry,recipient,9830 Arch St,Philadelphia,19107,(215) 555-5515,info@hungryyouthcenterpantry.example.org,active
+1445,Graduate Hospital University Campus Dining Services,donor,8825 S Broad St,Philadelphia,19125,(267) 555-4424,donate@graduatehospitaluniversi.example.org,active
+1430,Lawncrest Events & Catering,donor,5041 S Broad St,Philadelphia,19120,(445) 555-7603,donate@lawncresteventscatering.example.org, active
+1537,East Falls Fresh Market,donor,1498 South St,Philadelphia,19102,(215) 555-0575,donate@eastfallsfreshmarket.example.org,ACTIVE
+1116,Kingsessing Family Shelter,recipient,304 E Passyunk Ave,Philadelphia,19129,(445) 555-8638,info@kingsessingfamilyshelter.example.org, inactive
+1294,Copper Recovery House,recipient,3402 Lancaster Ave,Philadelphia,19136,(267) 555-1205,info@copperrecoveryhouse.example.org,Active
+1522,Romano's Kitchen,donor,7045 Spring Garden St,Philadelphia,19116,(445) 555-0290,donate@romanoskitchen.example.org,active
+1058,Harbor Food Distributors,donor,9813 N 5th St,Philadelphia,19104,(445) 555-5419,donate@harborfooddistributors.example.org,active
+1015,Silver Oven Bakery,donor,6623 Chestnut St,Philadelphia,19128,(215) 555-9529,donate@silverovenbakery.example.org,active
+1645,Lopez Family Grocers,donor,3750 N 5th St,Philadelphia,19132,(445) 555-9849,donate@lopezfamilygrocers.example.org,active
+1460,Cobblestone Oven Bakery,donor,504 N 5th St,Philadelphia,19146,(445) 555-6201,donate@cobblestoneovenbakery.example.org,active
+1334,Schmidt's Cantina,donor,9074 S 9th St,Philadelphia,19103,(267) 555-6812,donate@schmidtscantina.example.org, active
+1429,Patel House Student Pantry,recipient,6256 Castor Ave,Philadelphia,19102,(445) 555-7930,info@patelhousestudentpantry.example.org, active
+1197,Santos's Kitchen,donor,8002 Arch St,Philadelphia,19107,(267) 555-8183,donate@santosskitchen.example.org, active
+1154,Wynnefield Food Co-op,donor,2513 N 22nd St,Philadelphia,19107,(215) 555-9108,donate@wynnefieldfoodcoop.example.org,ACTIVE
+1510,Old Mill Riverside Food Supply,donor,2493 Vine St,Philadelphia, 19125,(445) 555-7050,donate@oldmillriversidefoodsupp.example.org, active
+1256,Mayfair Family Shelter,Recipient,7947 Oregon Ave,Philadelphia,19146,(215) 555-8401,info@mayfairfamilyshelter.example.org,Active
+1526,Bustleton Senior Living Dining Services,donor,9756 Snyder Ave,Philadelphia,19111,(215) 555-1867,donate@bustletonseniorlivingdin.example.org,ACTIVE
+1237,Green Basket Supermarket,donor,7387 W Chelten Ave,Philadelphia,19132,(215) 555-2973,donate@greenbasketsupermarket.example.org,active
+1552,East Falls Women's Shelter,recipient,8161 S Broad St,Philadelphia,19143-6864,(267) 555-9153,info@eastfallswomensshelter.example.org, active
+1216,Chen's Eatery,donor,8038 Chestnut St,Philadelphia,19154,(267) 555-6385,donate@chenseatery.example.org,ACTIVE
+1132,The Harvest Spoon,donor,625 N 22nd St,Philadelphia,19107,(445) 555-3891,donate@theharvestspoon.example.org,Active
+1137,Fox Chase Corner Market,Donor,5708 N 22nd St,Philadelphia,19116,(215) 555-6723,donate@foxchasecornermarket.example.org,active
+1252,Mayfair Fresh Market,donor,821 S 9th St,Philadelphia,19147,(445) 555-1081,donate@mayfairfreshmarket.example.org,active
+1416,Sullivan House Women's Shelter,recipient,4999 Vine St,Philadelphia,19134,(267) 555-1661,info@sullivanhousewomensshelt.example.org,ACTIVE
+1078,Spring Garden Corner Market,donor,6079 Washington Ave,Philadelphia,19125,(445) 555-6523,donate@springgardencornermarket.example.org, active
+1367,Whitman Food Co-op,donor,7038 Ridge Ave,Philadelphia,19146,(267) 555-5678,donate@whitmanfoodcoop.example.org,active
+1647,Sunny Synagogue Kitchen,both,2225 Spring Garden St,Philadelphia,19116,(267) 555-8476,donate@sunnysynagoguekitchen.example.org,Active
+1104,Penn Food Distributors,donor,4349 Market St,Philadelphia,19116,(215) 555-4060,donate@pennfooddistributors.example.org,Active
+1119,Fishtown Bread Co.,donor,477 Castor Ave,Philadelphia,19107,(445) 555-4589,donate@fishtownbreadco.example.org,Active
+1669,Sunny Kettle iDner,donor,7042 MARKET ST,Philadelphia,19135.0,(215) 555-7094,donate@sunnykettlediner.example.org,Active
+1601,Johnson's Deli & Grocery,DONOR,843 Aramingo Ave,Philadelphia,19102,(445) 555-8944,donate@johnsonsdeligrocery.example.org,active
+1289,Ali Catering,donor,1607 Washington Ave,Philadelphia,19102,(267) 555-1487,donate@alicatering.example.org,active
+1587,Iron Schuylkill Food Supply,donor,7343 Oregon Ave,Philadelphia,19143,(267) 555-5261,donate@ironschuylkillfoodsupply.example.org,Active
+1598,Oak Lane Recovery House,recipient,477 Washington Ave,Philadelphia,19104,(267) 555-6790,info@oaklanerecoveryhouse.example.org,active
+1054,Mayfair Farmers Market Stand,donor,9403 Bustleton Ave,Philadelphia,19106,(267) 555-7372,donate@mayfairfarmersmarketstan.example.org,active
+1114,Schuylkill Food Distributors,donor,7159 Main St,Philadelphia,19107,(445) 555-2729,donate@schuylkillfooddistributo.example.org,ACTIVE
+1031,Cohen's Eatery,donor,5670 Bustleton Ave,Philadelphia,19102,(445) 555-8624,donate@cohenseatery.example.org,Active
+1124,Red Brick Fork Diner,donor,8542 Spring Garden St,Philadelphia, 19130,(215) 555-9007,donate@redbrickforkdiner.example.org, active
+1255,Greco's Bakery,Donor,5407 W Lehigh Ave,Philadelphia,19146,(215) 555-3853,donate@grecosbakery.example.org, active
+1576,Cobblestone University Campus Cafeteria,donor,3478 Chestnut St,Philadelphia,19104,(267) 555-8989,donate@cobblestoneuniversitycam.example.org, active
+1497,Maple Kettle Cantina,donor,3160 Arch St,Philadelphia,19140.0,(267) 555-8040,donate@maplekettlecantina.example.org,Active
+1263,Tran Wholesale Foods,donor,9468 N 22nd St,PHILADELPHIA,19147,(215) 555-5622,donate@tranwholesalefoods.example.org, active
+1068,The Rusty Suites,donor,2603 Girard Ave,Philadelphia,19114,(267) 555-0411,donate@therustysuites.example.org,ACTIVE
+1011,Wissinoming Events & Catering,donor,1451 W Lehigh Ave,Philadelphia,19125,(445) 555-4823,donate@wissinomingeventscaterin.example.org,Active
+1288,Sunny Kettle Diner,donor,7042 Market St,Philadelphia,19135,(215) 555-7094,donate@sunnykettlediner.example.org,active
+1618,Old Mill Acres Farm,donor,9758 Kensington Ave,PHILADELPHIA,19136-4265,(215) 555-7472,donate@oldmillacresfarm.example.org,active
+1564,Okafor House Mutual Aid Pantry,recipient,8523 N 63rd St,Philadelphia,19146,(215) 555-1849,info@okaforhousemutualaidpant.example.org,ACTIVE
+1328,Old Mill Fork Catering Co.,donor,7992 Haverford Ave,Philadelphia,19130,(445) 555-2909,donate@oldmillforkcateringco.example.org, active
+1287,Overbrook Smokehouse,donor,1730 Walnut St,PHILADELPHIA,19146,(445) 555-7439,donate@overbrooksmokehouse.example.org,active
+1355,Greco House Mutual Aid Pantry,recipient,8956 Torresdale Ave,Philadelphia,19141,(267) 555-2681,info@grecohousemutualaidpantr.example.org, active
+1313,Maple Spoon Grill,Donor,1058 Ridge Ave,Philadelphia,19119,(215) 555-2936,donate@maplespoongrill.example.org,ACTIVE
+1608,Logan Square Mutual Aid Pantry,Recipient,7723 South St,Philadelphia,19118,(267) 555-4452,info@logansquaremutualaidpant.example.org,active
+1466,Mt. Airy Pho,donor,2979 Spring Garden St,Philadelphia,19104,(215) 555-2564,donate@mtairypho.example.org,ACTIVE
+1060,Maple Outreach Kitchen,recipient,7382 Spring Garden St,Philadelphia,19123.0,(215) 555-4107,info@mapleoutreachkitchen.example.org,Active
+1373,Rusty Ladle Cantina,donor,7911 Oregon Ave,Philadelphia,19154,(445) 555-0153,donate@rustyladlecantina.example.org,ACTIVE
+1023,Moreno Family Grocers,donor,1454 Ridge Ave,Philadelphia,19146,(215) 555-4548,donate@morenofamilygrocers.example.org,inactive
+1230,Byrne's Trattoria,donor,4451 N 63rd St,"Philadelphia, PA",19130,(267) 555-2160,donate@byrnestrattoria.example.org,ACTIVE
+1523,Eastwick Grill,donor,7754 Race St,Philadelphia,19116,(445) 555-5019,donate@eastwickgrill.example.org,ACTIVE
+1030,The Green Lantern,donor,1589 Germantown Ave,Philadelphia,19125,(445) 555-2910,donate@thegreenlantern.example.org,ACTIVE
+1483,Fairmount Corner Market,donor,4692 South St,Phila,19102,(445) 555-1092,donate@fairmountcornermarket.example.org, active
+1052,Williams Wholesale Foods,donor,6092 Haverford Ave,Philadelphia,19146,(445) 555-3704,donate@williamswholesalefoods.example.org,Active
+1151,Rusty Keystone Food Supply,donor,1452 Fairmount Ave,Philadelphia,19106,(215) 555-0552,donate@rustykeystonefoodsupply.example.org,ACTIVE
+1397,Moreno Catering,donor,6598 S 52nd St,Philadelphia,19115,(215) 555-7523,donate@morenocatering.example.org, active
+1414,Old City Events & Catering,donor,2776 W Chelten Ave,Philadelphia,19128,(215) 555-7078,donate@oldcityeventscatering.example.org,ACTIVE
+1125,Murphy Family Farm,donor,1383 Girard Ave,Phila,19143,(445) 555-8483,donate@murphyfamilyfarm.example.org,ACTIVE
+1398,Roxborough Neighborhood Center,both,1969 E Passyunk Ave,Philadelphia,19121,(267) 555-9159,donate@roxboroughneighborhoodce.example.org,ACTIVE
+1553,Old Mill Corporate Center Cafeteria,donor,3526 Main St,Philadelphia,19139,(445) 555-5727,donate@oldmillcorporatecenterca.example.org,Active
+1530,Spruce Hill Community Hospital Dining Services,donor,8419 Pine St,Philadelphia,19147,(215) 555-8760,donate@sprucehillcommunityhospi.example.org, active
+1436,Eastwick Guest House,donor,3274 Fairmount Ave,Philadelphia,19107,(445) 555-3397,donate@eastwickguesthouse.example.org,ACTIVE
+1686,Maple Pto Diner LLC,donor,6037 Frankford Ave Suite 352,Philadelphia,19123,(215) 555-1896,donate@maplepotdiner.example.org,active
+1098,Rossi House Family Shelter,recipient,8329 E Passyunk Ave,Philadelphia,19103,(267) 555-7506,info@rossihousefamilyshelter.example.org,Active
+1235,Mantua Food Co-op,donor,4881 Haverford Ave,Philadelphia,19129,(215) 555-9852,donate@mantuafoodcoop.example.org, active
+1513,Fern Rock Food Co-op,donor,3151 Baltimore Ave,"Philadelphia, PA",19128-7603,(215) 555-3624,donate@fernrockfoodcoop.example.org,Active
+1202,Tioga Senior Living Dining Services,donor,8631 E Passyunk Ave,Philadelphia,19141,(215) 555-4448,donate@tiogaseniorlivingdinings.example.org,active
+1311,Rusty Fork Catering Co.,donor,8747 W Chelten Ave,Philadelphia,19123.0,(215) 555-6809,donate@rustyforkcateringco.example.org,ACTIVE
+1324,Okafor House Food Pantry,recipient,9660 N 22nd St,Philadelphia,19145,(267) 555-9938,info@okaforhousefoodpantry.example.org,active
+1312,Sullivan's Cantina,donor,7196 S 52nd St,Philadelphia,19152,(215) 555-9975,donate@sullivanscantina.example.org,ACTIVE
+1153,Rivera's Deli & Grocery,donor,2186 Ridge Ave,Philadelphia,19121,(445) 555-1452,donate@riverasdeligrocery.example.org,active
+1613,Golden Crust Bakehouse,donor,2480 Haverford Ave,Philadelphia,19135,(445) 555-2424,donate@goldencrustbakehouse.example.org, active
+1635,Pennsport Food Co-op,DONOR,9100 Haverford Ave,Philadelphia, 19103,(445) 555-9917,donate@pennsportfoodcoop.example.org, active
+1549,Cobblestone Basket Supermarket,donor,9343 E Passyunk Ave,PHILADELPHIA,19114,(445) 555-0386,donate@cobblestonebasketsuperma.example.org, active
+1448,Nguyen House Outreach Kitchen,recipient,2306 E Passyunk Ave,Philadelphia,19140,(445) 555-2024,info@nguyenhouseoutreachkitch.example.org,Active
+1245,Mantua Bread Co.,donor,1453 Race St,Philadelphia,19116,(445) 555-8978,donate@mantuabreadco.example.org,ACTIVE
+1308,Hungry Spoon Kitchen,donor,8991 Walnut St,Philadelphia,19154,(267) 555-3977,donate@hungryspoonkitchen.example.org, active
+1611,The Golden Kettle,donor,5312 Castor Ave,Philadelphia,19139,(445) 555-1524,donate@thegoldenkettle.example.org,active
+1251,The Cobblestone Lantern,donor,4881 W Chelten Ave,Philadelphia,19152.0,(267) 555-0089,donate@thecobblestonelantern.example.org,ACTIVE
+1239,Copper Masjid Food Ministry,both,5200 Vine St,Philadelphia,19140,(445) 555-6728,donate@coppermasjidfoodministry.example.org,ACTIVE
+1472,Oak Lane Smokehouse,donor,8804 Baltimore Ave,Philadelphia,19126,(445) 555-9222,donate@oaklanesmokehouse.example.org, active
+1486,Santos's Bakery,donor,1174 Girard Ave,Philadelphia,19133,(267) 555-0510,donate@santossbakery.example.org,ACTIVE
+1685,Williams's Kitchen,donor,6725 W Lehigh Avenue,Philadelphia,19133,,donate@williamsskitchen.example.org, active
+1594,Walsh's Eatery,donor,1390 S Broad St,Philadelphia,19125,(215) 555-8752,donate@walshseatery.example.org, active
+1639,Schmidt's Diner,donor,1535 Pine St,Philadelphia,19125,(445) 555-8894,donate@schmidtsdiner.example.org,active
+1684,Brennan Family Farm,Donor,500 Ridge Ave,Philadelphia,19107,,donate@brennanfamilyfarm.example.org,active
+1177,Hunting Park Fresh Market,donor,4935 Snyder Ave,Philadelphia,19141,(445) 555-2946,donate@huntingparkfreshmarket.example.org, active
+1270,Holmesburg Farmers Market Stand,donor,179 Oregon Ave,Philadelphia,19123,(215) 555-1725,donate@holmesburgfarmersmarkets.example.org,ACTIVE
+1017,Old Mill College Cafeteria,donor,7960 Frankford Ave,Philadelphia,19151,(215) 555-7864,donate@oldmillcollegecafeteria.example.org,ACTIVE
+1449,Golden Schuylkill Food Supply,Donor,302 Washington Ave,Philadelphia,19151,(267) 555-0958,donate@goldenschuylkillfoodsupp.example.org,ACTIVE
+1614,Silver Mutual Aid Pantry,recipient,8963 Walnut St,Phila,19102,(267) 555-5843,info@silvermutualaidpantry.example.org, active
+1569,Cohen House Food Pantry,recipient,7153 N 63rd St,Philadelphia,19150,(267) 555-4725,info@cohenhousefoodpantry.example.org,ACTIVE
+1402,Ali's Bakery,donor,1770 Bustleton Ave,Philadelphia,19148,(445) 555-4312,donate@alisbakery.example.org,Active
+1511,Washington Square Food Pantry,recipient,2085 N 5th St,Philadelphia,19102.0,(445) 555-8854,info@washingtonsquarefoodpant.example.org,Active
+1403,Golden Student Pantry,recipient,9398 Frankford Ave,Philadelphia,19148,(215) 555-9519,info@goldenstudentpantry.example.org,Active
+1493,Fairmount Youth Center Pantry,recipient,1017 Arch St,Phila,19102,(445) 555-2631,info@fairmountyouthcenterpant.example.org,active
+1408,Lucky Senior Living Cafeteria,donor,1638 Lancaster Ave,"Philadelphia, PA",19118,(445) 555-1588,donate@luckyseniorlivingcafeter.example.org,active
+1489,Oak Lane Events & Catering,donor,1935 Fairmount Ave,Philadelphia,19130,(267) 555-3805,donate@oaklaneeventscatering.example.org,active
+1326,Manayunk Fresh Market,donor,139 E Erie Ave,Philadelphia,19151,(215) 555-5230,donate@manayunkfreshmarket.example.org,Active
+1061,Kensington Food Co-op,donor,6017 South St,Philadelphia,19107,(215) 555-5327,donate@kensingtonfoodcoop.example.org,active
+1167,Washington Square Medical Center Dining Services,donor,9715 Castor Ave,Philadelphia,19119.0,(267) 555-3083,donate@washingtonsquaremedicalc.example.org, active
+1609,Park House Women's Shelter,recipient,532 N 5th St,Philadelphia,19114,(445) 555-9825,info@parkhousewomensshelter.example.org,Active
+1556,Bustleton Halal Grill,donor,4008 Castor Ave,Philadelphia,19146,(267) 555-4953,donate@bustletonhalalgrill.example.org,active
+1039,Blue College Cafeteria,donor,7596 S 9th St,Philadelphia,19149.0,(267) 555-7259,donate@bluecollegecafeteria.example.org, active
+1661,  Old City Eevnts & Catering ,donor,2776 W CHELTEN AVE,Philadelphia,19128,(215) 555-7078,donate@oldcityeventscatering.example.org,active
+1622,Le Wholesale Foods,DONOR,2490 Aramingo Ave,Philadelphia,19150,(267) 555-2457,donate@lewholesalefoods.example.org,Active
+1479,Queen Village Fresh Market,Donor,3508 S 9th St,Philadelphia,19120,(267) 555-5337,donate@queenvillagefreshmarket.example.org,ACTIVE
+1249,Port Richmond Community Church,both,3020 Aramingo Ave,Philadelphia,19104,(267) 555-8422,donate@portrichmondcommunitychu.example.org, inactive
+1057,Maple Basket Supermarket,Donor,4767 W Chelten Ave,Philadelphia,19130,(267) 555-1300,donate@maplebasketsupermarket.example.org,Active
+1200,The Copper Inn,donor,3769 E Passyunk Ave,Philadelphia,19104,(215) 555-2551,donate@thecopperinn.example.org,Active
+1577,Corner Riverside Food Supply,donor,7535 Ridge Ave,Philadelphia,19107,(445) 555-8268,donate@cornerriversidefoodsuppl.example.org,Active
+1358,Chen's Bakery,donor,8037 Woodland Ave,Philadelphia,19107,(267) 555-7884,donate@chensbakery.example.org,Active
+1470,Harvest Men's Shelter,recipient,1849 Oregon Ave,Philadelphia,19122,(445) 555-5139,info@harvestmensshelter.example.org,ACTIVE
+1212,Rusty Spoon Catering Co.,donor,6295 Bustleton Ave,"Philadelphia, PA",19128,(267) 555-0284,donate@rustyspooncateringco.example.org,active
+1065,Mt. Airy Events & Catering,donor,1429 Ridge Ave,Philadelphia,19148,(445) 555-4728,donate@mtairyeventscatering.example.org,active
+1538,Graduate Hospital Taqueria,donor,2235 Spring Garden St,Philadelphia,19104,(445) 555-8970,donate@graduatehospitaltaqueria.example.org, active
+1447,Cobblestone Senior Living Cafeteria,donor,3968 Walnut St,Philadelphia,19153,(215) 555-1753,donate@cobblestoneseniorlivingc.example.org,Active
+1037,Old Mill Pot Diner,donor,3878 Fairmount Ave,Philadelphia,19144,(215) 555-7122,donate@oldmillpotdiner.example.org,ACTIVE
+1250,Rusty Corporate Center Cafeteria,donor,465 W Allegheny Ave,Philadelphia,19107,(215) 555-9035,donate@rustycorporatecentercafe.example.org,ACTIVE
+1062,Roxborough Community Kitchen,recipient,7247 Fairmount Ave,Philadelphia, 19134,(215) 555-2186,info@roxboroughcommunitykitch.example.org, active
+1336,The Little Hearth,donor,3193 Washington Ave,Philadelphia,19147,(215) 555-8924,donate@thelittlehearth.example.org, active
+1175,Blue Crust Bakehouse,donor,3432 Haverford Ave,Philadelphia,19126,(215) 555-6410,donate@bluecrustbakehouse.example.org, active
+1462,Rivera Family Grocers,donor,506 Pine St,Philadelphia,19120,(445) 555-0235,donate@riverafamilygrocers.example.org,Active
+1390,Bridesburg Fresh Market,donor,4094 Main St,Philadelphia,19107.0,(215) 555-4116,donate@bridesburgfreshmarket.example.org,ACTIVE
+1476,Rossi's Bakery,DONOR,5615 Vine St,Philadelphia,19111,(445) 555-9272,donate@rossisbakery.example.org,active
+1056,Sunny Fork Bistro,donor,5286 Aramingo Ave,Philadelphia,19122,(215) 555-0231,donate@sunnyforkbistro.example.org,ACTIVE
+1463,Hunting Park Food Co-op,donor,5095 Walnut St,Philadelphia,19131,(267) 555-8821,donate@huntingparkfoodcoop.example.org,Active
+1166,O'Brien's Diner,donor,6470 Girard Ave,Philadelphia,19152,(215) 555-3754,donate@obriensdiner.example.org,active
+1454,Pennsport Masjid Food Ministry,both,4155 S 9th St,Philadelphia, 19149,(215) 555-3713,donate@pennsportmasjidfoodminis.example.org, active
+1491,Little Community Hospital Cafeteria,donor,2096 Frankford Ave,Philadelphia,19128,(215) 555-1737,donate@littlecommunityhospitalc.example.org,ACTIVE
+1345,Green Community Kitchen,recipient,4021 Aramingo Ave,Philadelphia,19140,(445) 555-6557,info@greencommunitykitchen.example.org,active
+1264,Schmidt's Bistro,donor,8596 Bustleton Ave,Philadelphia,19127,(445) 555-5574,donate@schmidtsbistro.example.org, active
+1118,The Rusty Fork,donor,936 Pine St,Philadelphia,19132,(267) 555-4318,donate@therustyfork.example.org,active
+1027,Somerton Senior Living Dining Services,donor,3571 Pine St,Philadelphia,19146,(267) 555-1014,donate@somertonseniorlivingdini.example.org,ACTIVE
+1196,Northern Liberties Masjid Food Ministry,both,4459 Spring Garden St,Philadelphia,19103,(215) 555-7996,donate@northernlibertiesmasjidf.example.org,active
+1382,Eastwick Inn,donor,5589 Woodland Ave,Philadelphia,19146,(267) 555-1385,donate@eastwickinn.example.org,ACTIVE
+1498,Fox Chase Synagogue Kitchen,both,7236 Spruce St,"Philadelphia, PA",19103,(267) 555-7077,donate@foxchasesynagoguekitchen.example.org,ACTIVE
+1401,Kingsessing Suites,donor,9032 N 5th St,Philadelphia,19139,(267) 555-1849,donate@kingsessingsuites.example.org,ACTIVE
+1145,Washington Square Fresh Market,donor,8781 Bustleton Ave,Philadelphia,19106,(445) 555-5196,donate@washingtonsquarefreshmar.example.org,Active
+1073,The Hungry Inn,donor,104 W Chelten Ave,Philadelphia,19111,(445) 555-6880,donate@thehungryinn.example.org,Active
+1181,Liberty Food Distributors,donor,3308 Washington Ave,Philadelphia,19154,(267) 555-0342,donate@libertyfooddistributors.example.org, active
+1149,Bianchi Family Grocers,donor,1139 W Chelten Ave,Philadelphia,19145,(445) 555-0748,donate@bianchifamilygrocers.example.org,active
+1140,Sunny Delaware Food Supply,donor,5378 N Broad St,Phila, 19147,(215) 555-7893,donate@sunnydelawarefoodsupply.example.org,ACTIVE
+1044,Rossi House Student Pantry,recipient,3782 N Broad St,Philadelphia,19115,(215) 555-6180,info@rossihousestudentpantry.example.org,active
+1418,The Lucky Kettle,donor,8980 W Chelten Ave,PHILADELPHIA,19107-6355,(215) 555-9927,donate@theluckykettle.example.org,ACTIVE
+1012,Chen House Mutual Aid Pantry,recipient,6379 Haverford Ave,Philadelphia,19142,(215) 555-4582,info@chenhousemutualaidpantry.example.org,Active
+1393,Spruce Hill Farmers Market Stand,donor,9134 S 52nd St,Philadelphia,19115,(267) 555-9079,donate@sprucehillfarmersmarkets.example.org, active
+1375,Spruce Hill Food Co-op,donor,7911 Aramingo Ave,Philadelphia,19125,(267) 555-1510,donate@sprucehillfoodcoop.example.org,active
+1265,Nicetown Food Pantry,recipient,1405 N Broad St,Philadelphia,19139,(445) 555-4214,info@nicetownfoodpantry.example.org,active
+1201,Russo's Bakery,donor,6715 Snyder Ave,Philadelphia,19133,(267) 555-2709,donate@russosbakery.example.org,active
+1481,Port Richmond Food Co-op,donor,7477 N 63rd St,Philadelphia,19141,(445) 555-9679,donate@portrichmondfoodcoop.example.org,Active
+1074,Spruce Hill Noodle House,donor,9747 Woodland Ave,Philadelphia,19140,(445) 555-9885,donate@sprucehillnoodlehouse.example.org,ACTIVE
+1536,Blue Women's Shelter,Recipient,5704 W Lehigh Ave,Philadelphia,19104,(267) 555-8448,info@bluewomensshelter.example.org,Active
+1446,Byrne's Deli & Grocery,donor,3729 Frankford Ave,Philadelphia,19134,(445) 555-3810,donate@byrnesdeligrocery.example.org,active
+1655,Holmesburg Pizza Co.,donor,2352 South St,Philadelphia, 19129,,donate@holmesburgpizzaco.example.org,INACTIVE
+1190,Mt. Airy Community Hospital Dining Services,donor,2087 Baltimore Ave,Philadelphia,19114,(445) 555-8021,donate@mtairycommunityhospitald.example.org,Active
+1585,Copper Acres Farm,DONOR,5677 Bustleton Ave,Philadelphia,19102,(445) 555-1201,donate@copperacresfarm.example.org, active
+1368,Chestnut Hill Youth Center Pantry,RECIPIENT,4163 W Chelten Ave,Philadelphia,19146,(267) 555-6823,info@chestnuthillyouthcenterp.example.org,ACTIVE
+1067,Maple Crust Bakehouse,donor,5377 S 52nd St,Philadelphia,19135,(215) 555-2125,donate@maplecrustbakehouse.example.org, active
+1467,Copper Community Hospital Cafeteria,donor,3865 Bustleton Ave,Philadelphia,19106,(267) 555-1948,donate@coppercommunityhospitalc.example.org,Active
+1411,Blue Youth Center Pantry,recipient,656 Aramingo Ave,Philadelphia,19131,(215) 555-4703,info@blueyouthcenterpantry.example.org,active
+1338,Passyunk Fresh Market,donor,1680 Spring Garden St,"Philadelphia, PA",19153,(215) 555-6754,donate@passyunkfreshmarket.example.org,ACTIVE
+1064,Washington Square Suites,donor,5595 South St,Philadelphia,19123,(215) 555-3990,donate@washingtonsquaresuites.example.org, active
+1158,Hungry Food Pantry,Recipient,5341 E Erie Ave,Philadelphia,19146,(445) 555-5253,info@hungryfoodpantry.example.org,ACTIVE
+1604,The Iron Table,donor,147 S 52nd St,Philadelphia,19147,(445) 555-3630,donate@theirontable.example.org,ACTIVE
+1099,Kowalski Family Grocers,donor,9426 Bustleton Ave,Philadelphia,19146,(445) 555-8906,donate@kowalskifamilygrocers.example.org,active
+1504,Lucky Mini Mart,Donor,1853 Aramingo Ave,Philadelphia,19136,(445) 555-3133,donate@luckyminimart.example.org,ACTIVE
+1106,Logan Community Hospital Dining Services,donor,1468 Bustleton Ave,Philadelphia,19115,(267) 555-8479,donate@logancommunityhospitaldi.example.org,ACTIVE
+1679,Novak House Mutual Aid Pantry,recipient,3926 Lancaster Ave Suite 302,Philadelphia,19121-6833,(215) 555-3988,info@novakhousemutualaidpantr.example.org,active
+1529,Iron Men's Shelter,recipient,2945 Haverford Ave,Philadelphia,19131,(215) 555-1767,info@ironmensshelter.example.org,active
+1113,Spruce Hill Medical Center Dining Services,donor,2284 Chestnut St,Phila,19146,(267) 555-8069,donate@sprucehillmedicalcenterd.example.org,Active
+1502,Rusty Kettle Catering Co.,donor,9337 Washington Ave,Philadelphia,19104,(215) 555-6717,donate@rustykettlecateringco.example.org,active
+1628,Byrne Family Grocers,donor,8982 Girard Ave,PHILADELPHIA,19146,(267) 555-5553,donate@byrnefamilygrocers.example.org, active
+1214,The Harvest Fork,donor,4703 Lancaster Ave,Philadelphia,19130,(215) 555-0237,donate@theharvestfork.example.org,active
+1459,Golden Corporate Center Cafeteria,donor,5762 Pine St,Philadelphia,19147,(267) 555-2163,donate@goldencorporatecentercaf.example.org,Active
+1036,Corner Mini Mart,donor,2607 N 63rd St,Philadelphia,19129,(445) 555-8413,donate@cornerminimart.example.org, active
+1357,The Hungry Hotel,donor,2976 W Lehigh Ave,Philadelphia,19130,(445) 555-5724,donate@thehungryhotel.example.org,ACTIVE
+1053,Somerton Farmers Market Stand,donor,3381 Spruce St,Philadelphia,19127,(267) 555-7212,donate@somertonfarmersmarketsta.example.org,active
+1307,Frankford Mutual Aid Pantry,recipient,9728 Baltimore Ave,Philadelphia,19144,(215) 555-3319,info@frankfordmutualaidpantry.example.org,active
+1372,Kim House Outreach Kitchen,recipient,3883 Walnut St,Philadelphia,19115,(215) 555-6593,info@kimhouseoutreachkitchen.example.org,Active
+1008,Byrne House Student Pantry,recipient,9670 Lancaster Ave,Philadelphia,19151,(267) 555-7356,info@byrnehousestudentpantry.example.org, active
+1210,The Harvest Skillet,DONOR,1197 Kensington Ave,Philadelphia,19147,(445) 555-5689,donate@theharvestskillet.example.org,active
+1033,Pennsport Youth Center Pantry,recipient,7712 South St,Philadelphia,19116,(445) 555-7526,info@pennsportyouthcenterpant.example.org,ACTIVE
+1427,Cobblestone Youth Center Pantry,recipient,6176 South St,Philadelphia,19145,(267) 555-0550,info@cobblestoneyouthcenterpa.example.org,Active
+1169,Old Mill Pot Trattoria,donor,1761 Frankford Ave,Philadelphia,19141,(445) 555-5703,donate@oldmillpottrattoria.example.org,active
+1616,Rittenhouse Food Co-op,donor,1479 Race St,Philadelphia,19152,(215) 555-2182,donate@rittenhousefoodcoop.example.org,active
+1131,Ortiz Family Grocers,donor,7458 Aramingo Ave,Philadelphia,19131,(215) 555-3091,donate@ortizfamilygrocers.example.org, active
+1396,Northern Liberties Parish Kitchen,both,2708 W Allegheny Ave,Philadelphia,19152,(215) 555-0919,donate@northernlibertiesparishk.example.org,active
+1006,Society Hill Bread Co.,donor,7528 S 52nd St,Philadelphia,19150-3315,(267) 555-8795,donate@societyhillbreadco.example.org,ACTIVE
+1475,The Little Pot,Donor,3870 W Chelten Ave,Philadelphia,19138,(445) 555-8143,donate@thelittlepot.example.org,active
+1473,Valley Food Distributors,donor,7170 Arch St,Philadelphia,19154,(267) 555-9827,donate@valleyfooddistributors.example.org,Active
+1665,Rusty Kettle Catering Co.,Donor,9337 Washington Ave.,Philadelphia,19104,,donate@rustykettlecateringco.example.org,ACTIVE
+1428,Brennan House Student Pantry,RECIPIENT,2986 Bustleton Ave,Philadelphia,19104,(445) 555-1203,info@brennanhousestudentpantr.example.org, inactive
+1318,Maple Senior Living Cafeteria,donor,6706 Market St,Philadelphia,19120,(215) 555-8102,donate@mapleseniorlivingcafeter.example.org, active
+1602,Little Liberty Food Supply,donor,2218 Torresdale Ave,Philadelphia,19106,(215) 555-5742,donate@littlelibertyfoodsupply.example.org,active
+1246,The Blue Skillet,donor,2903 Market St,Philadelphia,19104,(445) 555-8887,donate@theblueskillet.example.org,active
+1273,Haddad House Women's Shelter,recipient,4173 Arch St,Philadelphia,19142,(267) 555-9159,info@haddadhousewomensshelter.example.org, active
+1650,Schmidt House Food Pantry,recipient,2513 South St,Philadelphia,19152,(445) 555-1871,info@schmidthousefoodpantry.example.org,Active
+1092,Kim's Eatery,donor,1119 Race St,Philadelphia,19147,(267) 555-5089,donate@kimseatery.example.org,active
+1629,Little College Cafeteria,donor,7028 Cottman Ave,Philadelphia,19152,(215) 555-6789,donate@littlecollegecafeteria.example.org,Active
+1157,Green Spoon Catering Co.,donor,7741 Race St,Philadelphia,19125,(445) 555-2367,donate@greenspooncateringco.example.org,ACTIVE
+1188,Novak House Mutual Aid Pantry,recipient,3926 Lancaster Ave,Philadelphia,19121,(215) 555-3988,info@novakhousemutualaidpantr.example.org, active
+1040,Callowhill Food Co-op,donor,6111 Spruce St,Philadelphia,19123,(267) 555-3479,donate@callowhillfoodcoop.example.org,Active
+1206,Copper Community Kitchen,recipient,8732 Ridge Ave,"Philadelphia, PA",19111,(215) 555-7524,info@coppercommunitykitchen.example.org,Active
+1531,Park House Outreach Kitchen,recipient,3742 N 22nd St,Philadelphia,19146.0,(445) 555-7271,info@parkhouseoutreachkitchen.example.org,ACTIVE
+1676,Corner Mini Mart,DONOR,2607 N 63rd St Suite 357,Philadelphia, 19129,(445) 555-8413,donate@cornerminimart.example.org, active
+1293,Point Breeze Fresh Market,donor,8281 Main St,Philadelphia,19107,(267) 555-1343,donate@pointbreezefreshmarket.example.org,active
+1035,Bianchi Family Farm,donor,4444 Spruce St,Philadelphia,19127,(215) 555-5618,donate@bianchifamilyfarm.example.org,ACTIVE
+1570,Red Brick University Campus Cafeteria,Donor,4425 Girard Ave,Philadelphia,19151,(267) 555-9528,donate@redbrickuniversitycampus.example.org, active
+1547,Juniata Community Kitchen,recipient,3833 Kensington Ave,Philadelphia,19139,(267) 555-5624,info@juniatacommunitykitchen.example.org, active
+1420,Rittenhouse Fresh Market,donor,9151 Fairmount Ave,Philadelphia,19148,(215) 555-4985,donate@rittenhousefreshmarket.example.org,ACTIVE
+1077,Walsh's Bakery,donor,3912 N 22nd St,Philadelphia,19144,(267) 555-9664,donate@walshsbakery.example.org,active
+1485,Murphy Family Grocers,donor,5755 Pine St,Philadelphia,19154,(445) 555-0861,donate@murphyfamilygrocers.example.org,ACTIVE
+1514,Whitman Inn,donor,6362 Frankford Ave,Philadelphia,19126,(267) 555-7285,donate@whitmaninn.example.org,Active
+1090,The Green Inn,donor,6649 Spring Garden St,Philadelphia,19125,(215) 555-7102,donate@thegreeninn.example.org, active
+1383,The Little Oven,donor,4660 Bustleton Ave,Philadelphia,19125,(445) 555-3278,donate@thelittleoven.example.org,ACTIVE
+1482,Kingsessing College Dining Services,donor,8748 S Broad St,Philadelphia,19153,(445) 555-0579,donate@kingsessingcollegedining.example.org,ACTIVE
+1674,Okafor Family Grocers LLC,donor,6709 Fairmount Ave Suite 74,Philadelphia,19135,(267) 555-2303,donate@okaforfamilygrocers.example.org,ACTIVE
+1610,Silver Kettle Eatery,donor,3220 Main St,Philadelphia,19102,(445) 555-7229,donate@silverkettleeatery.example.org, active
+1019,The Old Mill Lantern,donor,5864 Aramingo Ave,Philadelphia,19137,(445) 555-7086,donate@theoldmilllantern.example.org,ACTIVE
+1471,Roxborough Cafe,Donor,4061 W Chelten Ave,Philadelphia,19137,(267) 555-6842,donate@roxboroughcafe.example.org,Active
+1285,Fern Rock Student Pantry,recipient,6941 Pine St,Philadelphia,19146,(445) 555-5670,info@fernrockstudentpantry.example.org,Active
+1146,Schmidt Family Grocers,donor,4772 Girard Ave,Philadelphia,19106,(267) 555-0915,donate@schmidtfamilygrocers.example.org, active
+1589,Golden Acres Farm,donor,9252 Race St,Philadelphia,19139,(267) 555-0654,donate@goldenacresfarm.example.org, active
+1139,Corner Community Garden,Both,6558 Torresdale Ave,Philadelphia,19124,(267) 555-0617,donate@cornercommunitygarden.example.org, active
+1371,The Green Oven,donor,2766 Spruce St,Philadelphia,19103,(267) 555-9970,donate@thegreenoven.example.org, active
+1042,Williams Family Farm,donor,7405 Woodland Ave,Philadelphia,19116,(445) 555-6538,donate@williamsfamilyfarm.example.org,active
+1195,Copper Community Church,both,5252 E Erie Ave,PHILADELPHIA,19125,(267) 555-7219,donate@coppercommunitychurch.example.org,ACTIVE
+1283,Hungry Lantern Diner,donor,2850 Oregon Ave,Philadelphia,19152,(215) 555-0169,donate@hungrylanterndiner.example.org,ACTIVE
+1646,Iron Table Catering Co.,donor,6793 Arch St,Philadelphia,19146,(445) 555-7988,donate@irontablecateringco.example.org,ACTIVE
+1495,Point Breeze Farmers Market Stand,donor,4973 Frankford Ave,Philadelphia,19127,(445) 555-5908,donate@pointbreezefarmersmarket.example.org,ACTIVE
+1568,Old Mill Pot Grill,donor,1783 E Passyunk Ave,Philadelphia,19138,(445) 555-3772,donate@oldmillpotgrill.example.org,ACTIVE
+1450,Harvest Mini Mart,donor,3400 N 63rd St,Philadelphia,19107,(215) 555-7044,donate@harvestminimart.example.org,ACTIVE
+1527,Romano Wholesale Foods,donor,8000 Pine St,Philadelphia,19154,(267) 555-7963,donate@romanowholesalefoods.example.org,active
+1266,Lucky Food Pantry,recipient,1540 S 9th St,Philadelphia,19134,(445) 555-7119,info@luckyfoodpantry.example.org,ACTIVE
+1010,Harvest Crust Bakehouse,donor,9145 S 52nd St,Philadelphia,19103,(267) 555-7030,donate@harvestcrustbakehouse.example.org,ACTIVE
+1051,Iron Acres Farm,donor,2405 S Broad St,Philadelphia,19130.0,(215) 555-9178,donate@ironacresfarm.example.org,Active
+1162,Chen's Bistro,donor,7133 Arch St,Philadelphia,19116,(445) 555-2444,donate@chensbistro.example.org,Active
+1292,Frankford Pho,donor,5452 Oregon Ave,Philadelphia,19119,(267) 555-4173,donate@frankfordpho.example.org,ACTIVE
+1147,Le's Grill,donor,9621 Cottman Ave,Philadelphia,19154,(215) 555-7469,donate@lesgrill.example.org, active
+1093,Golden Oven Bakery,Donor,514 Race St,Philadelphia,19148,(445) 555-9723,donate@goldenovenbakery.example.org,ACTIVE
+1110,O'Brien's Bakery,Donor,2596 Torresdale Ave,Philadelphia,19107,(267) 555-6966,donate@obriensbakery.example.org,active
+1127,Rusty Community Hospital Cafeteria,donor,9357 Kensington Ave,Philadelphia,19147-4913,(267) 555-2735,donate@rustycommunityhospitalca.example.org,ACTIVE
+1571,Corner Hearth Eatery,donor,6882 Kensington Ave,Philadelphia,19126,(215) 555-1897,donate@cornerheartheatery.example.org,ACTIVE
+1344,Bella Vista Women's Shelter,recipient,5252 Woodland Ave,Philadelphia,19103,(267) 555-0345,info@bellavistawomensshelter.example.org,ACTIVE
+1644,The Red Brick Kettle,donor,7442 Pine St,Philadelphia, 19135,(445) 555-2455,donate@theredbrickkettle.example.org, active
+1343,Copper Pot Kitchen,donor,3521 E Passyunk Ave,Philadelphia,19135,(215) 555-7320,donate@copperpotkitchen.example.org,ACTIVE
+1182,Juniata Mutual Aid Pantry,recipient,7923 Fairmount Ave,Philadelphia,19152,(267) 555-5528,info@juniatamutualaidpantry.example.org,ACTIVE
+1519,Chestnut Hill Farmers Market Stand,donor,7676 W Allegheny Ave,Philadelphia,19135,(267) 555-8477,donate@chestnuthillfarmersmarke.example.org,active
+1374,Kensington Inn,donor,2292 Bustleton Ave,Philadelphia,19125,(445) 555-2786,donate@kensingtoninn.example.org,Active
+1432,Little Basket Supermarket,donor,7144 N 63rd St,Philadelphia,19104,(445) 555-9223,donate@littlebasketsupermarket.example.org,active
+1315,Abboud Wholesale Foods,donor,9135 Bustleton Ave,Philadelphia,19146,(267) 555-9811,donate@abboudwholesalefoods.example.org,active
+1174,Powelton Corner Market,donor,798 Germantown Ave,Philadelphia,19127,(215) 555-3433,donate@poweltoncornermarket.example.org, active
+1219,Somerton Events & Catering,donor,1716 Haverford Ave,Philadelphia,19102,(267) 555-7690,donate@somertoneventscatering.example.org,Active
+1016,Pennsport Fresh Market,donor,4534 Girard Ave,Philadelphia,19102,(267) 555-6204,donate@pennsportfreshmarket.example.org, active
+1095,The Iron Pot,DONOR,3670 Pine St,Phila,19148,(215) 555-8601,donate@theironpot.example.org, active
+1277,Whitman Fresh Market,donor,7546 Spring Garden St,Philadelphia,19125,(215) 555-1527,donate@whitmanfreshmarket.example.org, active
+1304,Society Hill Smokehouse,donor,1609 N Broad St,Philadelphia,19127,(445) 555-1672,donate@societyhillsmokehouse.example.org, active
+1268,Lopez Catering,donor,6578 N 5th St,Philadelphia,19102,(267) 555-7535,donate@lopezcatering.example.org, active
+1204,Graduate Hospital Bread Co.,donor,4280 S 52nd St,Philadelphia,19102,(215) 555-5673,donate@graduatehospitalbreadco.example.org,active
+1171,Northern Liberties Recovery House,recipient,7273 Lancaster Ave,Philadelphia,19150,(215) 555-9627,info@northernlibertiesrecover.example.org,Active
+1542,The Cobblestone Ladle,donor,2994 Arch St,Philadelphia,19122,(445) 555-5674,donate@thecobblestoneladle.example.org,active
+1055,Spring Garden Community Garden,both,1080 Washington Ave,Philadelphia,19122,(267) 555-8606,donate@springgardencommunitygar.example.org,active
+1657,Rusty Oven Bakery LLC,donor,1161 Ridge Ave.,Philadelphia,19136,(445) 555-3759,donate@rustyovenbakery.example.org,ACTIVE
+1413,Copper Mini Mart,donor,6893 Torresdale Ave,Philadelphia,19119,(215) 555-4730,donate@copperminimart.example.org,Active
+1330,Powelton Fresh Market,donor,4456 Aramingo Ave,Philadelphia,19125,(445) 555-6924,donate@poweltonfreshmarket.example.org, active
+1143,Blue Senior Living Cafeteria,donor,9489 Main St,Philadelphia,19140,(215) 555-4792,donate@blueseniorlivingcafeteri.example.org,active
+1272,Rittenhouse Cafe,donor,1691 Race St,Philadelphia,19143,(267) 555-4864,donate@rittenhousecafe.example.org,ACTIVE
+1490,Hungry Mini Mart,donor,7396 N Broad St,PHILADELPHIA,19140-8132,(445) 555-8378,donate@hungryminimart.example.org,Active
+1220,Copper Hearth Grill,donor,4135 Baltimore Ave,Philadelphia,19116.0,(267) 555-2870,donate@copperhearthgrill.example.org,Active
+1591,Iron Oven Bakery,donor,3815 Castor Ave,Philadelphia,19103,(445) 555-6581,donate@ironovenbakery.example.org,active
+1431,Kim Family Grocers,donor,1654 Lancaster Ave,"Philadelphia, PA",19107,(215) 555-1191,donate@kimfamilygrocers.example.org,ACTIVE

@@ -1,0 +1,26 @@
+category_name,storage_type,description
+Prepared Hot Meals,refrigerated,Cooked entrees and sides ready to reheat and serve
+Sandwiches & Wraps,refrigerated,"Pre-made sandwiches, wraps and cold boxed meals"
+Salads,refrigerated,"Packaged green, grain and pasta salads"
+Deli & Prepared Proteins,refrigerated,"Sliced deli meats, rotisserie chicken, cooked proteins"
+Fresh Fruit,refrigerated,Whole and cut fresh fruit
+Fresh Vegetables,refrigerated,Fresh vegetables and leafy greens
+Fresh Meat & Poultry,refrigerated,"Raw meat and poultry, kept cold"
+Fresh Seafood,refrigerated,"Raw fish and shellfish, kept cold"
+Milk,refrigerated,Fluid milk and milk alternatives
+Cheese & Yogurt,refrigerated,"Cheese, yogurt and other cultured dairy"
+Eggs,refrigerated,Shell eggs
+Bread & Rolls,shelf-stable,"Loaves, rolls, bagels and tortillas"
+Pastries & Desserts,shelf-stable,"Muffins, pastries, cakes and cookies"
+Frozen Meals,frozen,Frozen entrees and ready meals
+Frozen Meat & Poultry,frozen,"Frozen raw meat, poultry and fish"
+Frozen Fruits & Vegetables,frozen,Frozen produce
+Canned Fruits & Vegetables,shelf-stable,Canned and jarred produce
+Canned Proteins & Beans,shelf-stable,"Canned tuna, chicken, beans and legumes"
+"Rice, Pasta & Grains",shelf-stable,"Dry rice, pasta, oats and grains"
+Breakfast Cereal,shelf-stable,Boxed cereal and granola
+Soups & Broths,shelf-stable,Canned or boxed soups and broths
+Snacks,shelf-stable,"Crackers, chips, bars and nuts"
+Beverages & Juices,shelf-stable,"Water, juice and other drinks"
+Baby Food & Formula,shelf-stable,Infant formula and baby food
+"Condiments, Sauces & Oils",shelf-stable,"Sauces, spreads, oils and seasonings"
