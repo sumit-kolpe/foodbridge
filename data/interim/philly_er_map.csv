@@ -1,0 +1,405 @@
+objectid,site_name,address,cluster
+1,Mighty Writers West,3520 Fairmount Ave.,1
+2,Hickman Temple Daycare,1220 S. 58th St,2
+3,Saint Paul's Baptist Church,1000 Wallace St,3
+4,Lutheran Settlement House (Lehigh Ave.),1007 W Lehigh Ave,4
+5,Kleinlife Northeast & Kleinlife Russian Satellite,10100 Jamison Ave,5
+6,Kleinlife Northeast & Kleinlife Russian Satellite,10100 Jamison Ave.,5
+7,Waters Memorial Community Center,1016-1018 South St,7
+8,West Philadelphia Senior Community Center,1016-26 N. 41st St.,8
+9,George Washington High School Pantry,10175 Bustleton Ave,9
+10,Mighty Writers El Futuro,1025 S. 9th St.,10
+11,Faith Chapel Church FCDC,108 E. Price St.,11
+12,Refuge Evangelical Baptist Church,1100 Oak Ln,12
+13,5th District Food Access at 10th and Poplar,1100 Poplar St.,13
+14,South Philly Community Fridge at Porco's Philly Pantry,1100 S 22nd St,14
+15,APM,1116 E Luzerne St,15
+16,South Philly Community Fridge at the People's Kitchen,1149 S. 9th St,16
+17,Now Faith Worship Center,1159 Chelten Ave,17
+18,South Philadelphia WIC Office,1165 S. Broad St.,18
+19,Neighborhood Community Action Center 1,1200 Carpenter St.,19
+20,St. John's Hospice,1221 Race St,20
+21,Holy Redeemer Food Cupboard,12265 Townsend Rd.,21
+22,Greater Mt. Sinai Baptist Church,1228 S 21st St,22
+23,Face to Face Germantown,123 E Price St,23
+24,Face to Face Germantown,123 E. Price St,23
+25,Small Things Market at Emmanuel (inside of Resurrection Church),123 S 17th St,25
+26,Philadelphia FIGHT,1233 Locust St.,26
+27,Parkwood WIC Office,12347 Academy Rd.,27
+28,New Jerusalem Laura,2011 W Norris St,28
+29,Small Things Philly Market - House of Hope,1300 W. Hunting Park Ave,29
+30,Dreuding Center,1321 N. Lawrence St. Door Number 10,30
+31,Bible Way Baptist Church,1323 N 52nd St.,31
+32,Temple - Wyoming WIC Office,1331 E Wyoming Ave.,32
+33,Neighborhood Community Action Center 9,1333 Wagner Ave.,33
+34,Salvation Army Temple,1340 Brown St,34
+35,Lutheran Settlement House,1340 Frankford Ave.,35
+36,The H.O.P.E. Food Pantry,140 E Mt. Airy Ave,36
+37,The Everywhere Project (Love Park),N 15th St. and John F. Kennedy Blvd,37
+38,New Bethany Baptist Church,1415 S 23rd St,38
+39,Mount Hebron Baptist Church,1417-15 Wharton St,39
+40,Gather the People House of Prayer,1429 W Clearfield St,40
+41,Church of the Redeemer Baptist,1440 S 24th St.,41
+42,North Philadelphia SDA Church,1510 W Oxford St,42
+43,MAP Holistic CDC (Mankind Against Poverty),1510 W Stiles St,43
+44,Grace Tabernacle Christian Church,1519 S 52nd St (Parking Lot),44
+45,Page Academy CDC,1524 W Champlost Ave,45
+46,Padre Pio Prayer Center Food Distribution (St. Joachim),1527 Church St,46
+47,The Word in Action International Ministries,1539 W. Courtland Street (enter on 16th St),47
+48,Zion AME Church,1600 S 21st St (Corner of 21st & Tasker Streets),48
+49,10th St. Market (North 10),"3890 N. 10th St., 2nd Fl",49
+50,Bright Hope Baptist Church,1601 N 12th St.,50
+51,Helping Hands Nonprofit Organization,1604 Margaret St,51
+52,BenePhilly Center at Office of Community Empowerment and Opportunity,1617 JFK Blvd. Suite 1800,52
+53,Saint Mark's Food Cupboard,1625 Locust St.,53
+54,Epiphany Fellowship Church Community Fridge,1632 W Diamond St,54
+55,Campbell AME Church,1657 Kinsey St,55
+56,Bethel Worship Center,169 W. Wyoming Ave.,56
+57,Bethel Worship Center,169 W. Wyoming Ave.,56
+58,Together We Can Change at Love Park,16th St. and JFK Blvd.,58
+59,Bethany Indonesian Church,1709 South Broad St,59
+60,Parkside Association of Philadelphia,"1719 N 52nd St, Suite G",60
+61,Woodland WIC Office,1741 S. 54th St.,61
+62,North Light Community Center,175 Green Ln,62
+63,Association of Former Gang Members,1801 W Diamond St,63
+64,The Everywhere Project (E. Clearfield St.),1810 E. Clearfield St.,64
+65,South Philly Community Fridge at LUHV Fridge,1840 Ellsworth St.,65
+66,Project HOME,1845 N 23rd St.,66
+67,Germantown Community Fridge,19 E. High St.,67
+68,First United Methodist Church of Germantown,19 E. High Street,68
+69,Philadelphia Episcopal Cathedral,19 S 38th St,69
+70,Bethel Presbyterian Church,1900 W York St,70
+71,Bethel Presbyterian Church,1900 W York St.,70
+72,Philadelphia Senior Center - Allegheny Branch,1900 W. Allegheny Ave.,72
+73,South Philly Community Fridge at BOK Building,1901 S. 9th St.,73
+74,South Philly Community Fridge at Good Shepherd Penn Partners,1901 South St.,74
+75,Frances E Willard Elementary School,1930 Elkhart St,75
+76,St. Benedict Food Bank,1940 E Chelten Ave,76
+77,Provision of Grace World Mission Church,1950 W Rockland St,77
+78,BenePhilly Center at Impact Services,1952 E. Allegheny Ave.,78
+79,Champlost Homes Tenant Council,1953 W Nedro Ave.,79
+80,First Haitian Church of God of Prophecy,199 E. Tabor Rd,80
+81,Germantown Community Fridge,20 W. Armat St.,81
+82,Mi Salud Wellness Center,200 E. Wyoming Ave.,82
+83,Norris Homes/North Central Community Center,2000 N 11th St,83
+84,The U School,2000 N 7th St.,84
+85,Mitzvah Food Program Northeast,10100 Jamison Ave.,85
+86,Mission of St. Joan of Arc Food Cupboard,2025 E Atlantic St,86
+87,Family Support Circle,2059 E Chelten Ave,87
+88,Neighborhood Community Action Center 5,2101 Cecil B. Moore Ave,88
+89,Church of Pentecost,2530 Wharton St,89
+90,Saint Edmond Senior Community Center,2130 S 21st St.,90
+91,Veterans Multi-Service Center,213-217 N. 4th St.,91
+92,Saint Michael's Lutheran Church,2139 E Cumberland St,92
+93,St. Edmonds Senior Community Center Catholic Housing and Community Services,2130 S 21st St.,90
+94,Dobbins Technical High School,2150 W Lehigh Ave.,94
+95,Lehigh WIC Office,217-33 W. Lehigh Ave.,95
+96,Bethesda Project - Connelly House,1212 Ludlow St,96
+97,Philadelphia VA Medical Center,3900 Woodland Ave,97
+98,On Lok House Satellite,219 N. 10th St.,98
+99,Bryn Mawr Avenue New Testament Church of God,2227 Bryn Mawr Ave,99
+100,Mighty Writers North,2300 Master St.,100
+101,Urban Creators,2315 N. 11th St.,101
+102,Eddie's House - The Cornerstone,2321 N Broad St,102
+103,Aramingo WIC Office,"2401 E. Tioga St., #A-4",103
+104,Marconi Older Adult Program,2433 S. 15th St.,104
+105,Cast Your Cares,2436-2438 Kensington Ave,105
+106,St. Francis Inn,2441 Kensington Ave,106
+107,Women Walking in Victory,2441 N 29th St,107
+108,"Whitman Council, Inc",2455 S. 3rd Street,108
+109,First Church Worship Center,2509 N 30th St,109
+110,Ian-Yae's In Touch,2524 N. 27th St.,110
+111,Geiger Memorial Brethren Church,2543 W. Lehigh Ave.,111
+112,South Philly Community Fridge at Growing Together Garden Party,2550 Reed St,112
+113,The Church of the Holy Apostles and the Mediator,260 S 51st St.,113
+114,Community Center at Visitation,2646 Kensington Ave,114
+115,Young Chances Foundation,2703 Tasker St,115
+116,Bridesburg United Methodist Church,2717-2719 Kirkbride St.,116
+117,Operation Save Our City,2774 Kensington Ave,117
+118,Gideon School,2817 W Glenwood Ave.,118
+119,Allegheny West Foundation,2850 N 22nd Street,119
+120,Saint John Memorial Baptist Church,2853 Germantown Ave,120
+121,Grace Community Christian Center,29 W Johnson St,121
+122,Share Community Fridge,2901 W Hunting Park Ave,122
+123,Crossroads Community Center,2918 N 6th St.,123
+124,Men Who Care of Germantown Inc,180 E Tulpehocken St,124
+125,Mighty Writers West,3520 Fairmount Ave,1
+126,Brewerytown Sharswood Coalition,3000 W Master St,126
+127,Martin Luther King Jr. Association For Nonviolence Inc. (MLK),3001 Walnut St.,127
+128,Philly House,302 N 13th St.,128
+129,Canaan Family Life Center,302 West School House Lane,129
+130,Pente Church of God,3027 N 5th St,130
+131,First Church of Love and Deliverance,3101 Ridge Ave.,131
+132,Saint Peter's Food Cupboard,313 Pine St.,132
+133,Broad Street Love,315 S Broad Street,133
+134,Salvation Army Tabernacle,3150 N Mascher St.,134
+135,Cornerstone Community Church,3176 Frankford Ave,135
+136,Friends Pantry & Community Fridge,320 Arch St,136
+137,Friends Pantry & Community Fridge,320 Arch Street,136
+138,The Sunday Love Project,3200 Kensington Ave,138
+139,Neighborhood Community Action Center 7,3201 N. 5th St.,139
+140,Friends' Fridge Philly,3217 West Clearfield St,140
+141,Brothers of Strawberry Mansion,3218 W Susquehanna Ave,141
+142,Brothers of Strawberry Mansion Clifford St.,3223 W Clifford St,142
+143,Church of the Annunciation,324 Carpenter Ln.,143
+144,Philadelphia Masjid,4700 Wyalusing Ave,144
+145,Open Door Ministries,3373 Frankford Ave.,145
+146,Mitzvah Food Program - Mainline,345 Montgomery Ave,146
+147,Germantown Avenue Crisis Ministry,35 W Chelten Ave,147
+148,East Falls Community Fridge,3507 Midvale Ave.,148
+149,Drexel University Dornsife Center for Neighborhood Partnerships,3509 Brandywine Street,149
+150,Drexel University Dornsife Center for Neighborhood Partnerships,3509 Brandywine Street,149
+151,Small Things Philly Market - Fairhill,3510 A St.,151
+152,Grace Lutheran Church,3529 Haverford Ave,152
+153,Fresh Fire Apostolic International Ministries,3579 Emerald Street,153
+154,Interfaith Food Cupboard,3600 Baring St,154
+155,As I Plant This Seed Community Fridge,3958 N 9th St,155
+156,Chosen 300 Ministries Inc.,3959 Lancaster Ave,156
+157,The Welcome Church,2111 Sansom St,157
+158,The Center at Journey’s Way,403 Rector St.,158
+159,Mount Zion United Holy Church,4118 Haverford Ave,159
+160,Two Ladies of Christ,4125 Ludlow St,160
+161,BenePhilly Center at Esperanza,4261 N. 5th St.,161
+162,Mizpah SDA,4355 Paul St,162
+163,Ujima Friends Peace Center,4371 Waln St,163
+164,Casa Del Carmen,4400 N Reese St,164
+165,Centre d'Adoration Chretienne,4520 Benner St,165
+166,West Philadelphia SDA,4527 Haverford Ave.,166
+167,West Philadelphia SDA,4527 Haverford Ave.,166
+168,Mt. Vernon Baptist Church,458 E Rittenhouse St,168
+169,Mama-Tee Fridge at Hue Boba Cafe,4600 Woodland Ave,169
+170,Bless Philadelphia Corporation,4610 Devereaux St,170
+171,Bless Philadelphia Corporation,4610 Devereaux St,170
+172,Truth Baptist Church,4666-4668 N 15th St,172
+173,Germantown WIC Office,47 W. Chelten Avenue,173
+174,Philadelphia Masjid,4700 Wyalusing Ave.,144
+175,New Life Community Center,4726 N Broad St,175
+176,Northeast Baptist Church Oasis Food Ministry,4744 Tackawanna St,176
+177,Peter Brassi NE Senior Center,4744-46 Frankford Ave.,177
+178,Katie's Cupboard at Tabor,4860 N Howard St,178
+179,Greater Philadelphia Alliance Social Service Center (GPASS),4943 N 5th St,179
+180,UC Hospitality Coalition (Philadelphia Episcopal Cathedral),38th and Ludlow (Red Door),180
+181,Mount Enon Baptist Church,500 Snyder Ave.,181
+182,UC Hospitality Coalition (St. Mary's),3619 Locust Walk,182
+183,Revelation Philadelphia Ministry Inc,2561 South 67th St,183
+184,UC Hospitality Coalition (Lutheran),3637 Chesnut Street,184
+185,Chosen 300 West,3959 Lancaster Ave,156
+186,New Beginnings Pentecostal,502 E Haines St.,186
+187,Philadelphia Senior Center - Avenue of the Arts and Asia-Pacific Senior Resource Center,509 S. Broad St.,187
+188,Somerton Food Bank,510 Somerton Ave.,188
+189,Holy Temple Lord and Savior,5116 Market St,189
+190,Feed the People Philly,5120 Chestnut St,190
+191,South Philly Community Fridge at Mifflin Sq. Park,516 Wolf St.,191
+192,Our Lady of Hope,5200 N. Broad St,192
+193,True Vine Worship Center,521-23 W. Lehigh Ave.,193
+194,Helping Hands for the Hungry,525 S. Cobbs Creek Parkway,194
+195,Holsey Temple CME Church,5305-5315 Germantown Ave,195
+196,Wharton Wesley Helping Hands,5341 Catharine St,196
+197,St. Barbara,5359 Lebanon Ave (side entrance),197
+198,Jerusalem French Church,537 E. Wyoming Ave.,198
+199,Lena St. Community Fridge,5424 Lena Street,199
+200,Grace Cafe,55 N Broad St,200
+201,"The Center, Arch St. United Methodist Church",55 N Broad St,201
+202,Iglesia Christiana Avivamiento,5500 Tabor Rd,202
+203,Salvation Army West Philadelphia Corps,5501 Market St,203
+204,Devereux Memorial United Methodist Church,2527 W Allegheny Ave,204
+205,48th Street Mount Pleasant Baptist Church,5539 Vine St,205
+206,Ezekiel Baptist Church,5701 Grays Ave,206
+207,Faith Temple Pentecostal Church,5618 Kingsessing Ave,207
+208,Neighborhood Community Action Center 4,5630 Vine St.,208
+209,FAWN Food Pantry at Rising Sun Health Center,5675 N. Front St.,209
+210,KleinLife Rhawnhurst,2101 Strahle Street,210
+211,Bethany Missionary Baptist Church,5749 Warrington Ave.,211
+212,Olney/Logan WIC Office,"5751 N. Broad St., Unit 5",212
+213,New Hope AME Zion Church,5802 Musgrave St.,213
+214,Center in the Park,5818 Germantown Ave.,214
+215,Salvation Army Rising Sun,5830 Rising Sun Ave.,215
+216,"BenePhilly Center at Impact Services at PA CareerLink, Northwest",5847 Germantown Ave.,216
+217,Saint Paul's Outreach,5900 N 5th St.,217
+218,African Family Health Organization (AFAHO),5901 Larchwood Ave,218
+219,McClure Elementary School,600 W Hunting Park Ave,219
+220,Feast for Friends,6001 Colgate St.,220
+221,Episcopal Community Services,6006 W Girard Ave,221
+222,Episcopal Community Service St. Barnabas Community Resource Center,6006 West Girard Ave,221
+223,Solomon Temple,602 W Erie Ave.,223
+224,Reconciliation And Liberty Bible Church,6027 Chestnut St,224
+225,UC Hospitality Coalition (Tabernacle United Church),3700 Chesnut Street,225
+226,Living Word Community,142 N. 17th St,226
+227,The Charles Foundation,605 N 52nd St,227
+228,Chelten Christian Crusade,609 E Chelten Ave,228
+229,Freedom Development Corporation,6100 W Columbia Ave,229
+230,Giving of Self Partnership,6101 Limekiln Pike,230
+231,Calvary Agape Outreach Service,6114 Haverford Ave,231
+232,Good Samaritan Baptist Church,6148-6150 Lansdowne Ave,232
+233,Breaking Bread on Broad,615 N Broad St,233
+234,Community of Compassion Inc.,6150 Cedar Ave.,234
+235,Neighborhood Community Action Center 3,6150 Cedar Ave.,235
+236,Catholic Social Services Southwest Family Service Center,6214 Grays Ave,236
+237,BenePhilly Center at Catholic Social Services Southwest,6214 Grays Ave.,236
+238,Brand New Life Christian Center,6301 Germantown Ave,238
+239,Kingdom Life Christian Center,6325 Frankford Ave.,239
+240,Feast of Justice - Northeast Services Hub,6434 Castor Ave,240
+241,Christ Apostolic Church of America (WOSEM),6438 Vine St,241
+242,OCCCDA (Castor Ave),6500 Castor Ave,242
+243,New Era Baptist Church,6618 Wyncote Ave.,243
+244,Neighborhood Community Action Center 8,68 W. Chelten Ave.,244
+245,Mt. Airy Community Fridge,6900 Stenton Ave,245
+246,Penn Asian Senior Services,6926 Old York Rd,246
+247,Firehouse Active Adult Center,5331 Haverford Ave.,247
+248,Friends Rehabilitation Program,704 W Girard Ave,248
+249,Why Not Prosper,717 E. Chelten Ave,249
+250,Star of Hope Baptist Church,7212 Keystone St,250
+251,Upper Room Missionary Baptist Church,7236 Ogontz Ave,251
+252,Catholic Social Services Northeast Family Service Center,7340 Jackson St,252
+253,Neighborhood Community Action Center 6,7374 Edmund St.,253
+254,Masjidullah Center for Human Excellence,7401 Limekiln Pike,254
+255,Tindley Temple Soup Kitchen,750 South Broad St,255
+256,Remnant Church of God,7708-7712 Ogontz Ave,256
+257,Northeast Community Fridge,7902 Oxford Ave,257
+258,"Food Pantry For Hope, Memorial Presbyterian Church of Fox Chase",7902 Oxford Ave.,258
+259,Northeast WIC Office,7959 Bustleton Ave.,259
+260,University City Hospitality Coalition Hillel,215 S 39th St.,260
+261,Old First United Church of Christ,322 Race St,261
+262,Saint Luke's Episcopal Church,5421 Germantown Ave,262
+263,Haitian Evangelical Baptist Church,814 E Chelten Ave,263
+264,Summer Homes for Hope,814 N 41st St.,264
+265,St Paul A.M.E. Church,8398 Lindbergh Blvd,265
+266,Abiding Truth Ministries,846 S 57th St.,266
+267,Siloam Food Pantry,850 11th St,267
+268,Bethany AME Church,8898 Ashton Rd,268
+269,Our Brother's Place,907 Hamilton St.,269
+270,OCCCDA (Howell St.),900 E Howell St,270
+271,Katie’s Cupboard at Tabor,4860 N Howard street,178
+272,Trinity Memorial Church,2212 Spruce Street,272
+273,Second Antioch Baptist Church,912 N 41st St,273
+274,Faith Temple COGIC,7485 Briar Rd,274
+275,"The Reid Foundation, Inc. at Always Independent",9150 Marshall Street,275
+276,New Testament Church of God,935 S 53rd St,276
+277,Mount Tabor CEED Corporation,961-971 N 7th St,277
+278,Neighborhood Community Action Center 10,9800 Roosevelt Blvd.,278
+279,Focus Philadelphia,Aviator Park (1958 Benjamin Franklin Pkwy),279
+280,La Salle College High School,Benjamin Franklin Parkway and Vine St. (Logan Square next to Pennypacker Memorial),280
+281,There's Hope,Kensington Ave. and E. Hilton St.,281
+282,The Table - Calvary Vision,Kensington Ave. and E. Sergeant St.,282
+283,"Feeding 5,000 a NJ Non-Profit Corp",Logan Square (200 N 19th St.),283
+284,Beulah Baptist Church,Love Park (JFK Blvd and N 15th St.),284
+285,St. Christopher's Hospital WIC Office,"Nelson Pavilion Bldg., 160 Erie Ave.",285
+286,Bread of Life,North 17th St. and Benjamin Franklin Parkway,286
+287,Keeping It Real Christian Fellowship Bread of Life Ministry,North 17th St. and Benjamin Franklin Parkway,286
+288,"Old St. Joseph's Faith, Food and Friends",Northeast Corner of 4th St. and Walnut St.,288
+289,Frankford High School,Oakland St. & Harrison St.,289
+290,Overbrook WIC Office,"Overbrook Plaza, #1400, 5610 Lancaster Ave.",290
+291,Germantown SDA Church,W Chelten Ave. and Wayne Ave.,291
+292,Hub of Hope,"1401 JFK Pkway, Suburban Station Concourse (lower level)",292
+293,"Church of the Holy Trinity, Open Hearts Cafe",1904 Walnut St,293
+294,Chosen 300,1116 Spring Garden St.,294
+295,Lutheran Settlement House,1340 Frankford Ave,35
+296,Feast of Justice (Tyson Ave),3101 Tyson Ave,296
+297,CHCS Norris Square Center,2121 N. Howard St,297
+298,Philadelphia Housing Authority Cassie L. Holly Apts. Satelite,2100 Dickinson St.,298
+299,Catholic Housing and Community Services Star Harbor Senior Center Satellite,4700 Springfield Ave.,299
+300,Philadelphia Housing Authority Wilson Park,2500 Jackson St.,300
+301,Nativity Satellite Program,3255 Belgrade St,301
+302,Northeast Older Adult Center,8101 Bustleton Ave.,302
+303,Memorial Tabernacle Church,2249 W Hunting Park Ave,303
+304,Live to Serve,728 E Allegheny Ave,304
+305,Lutheran Settlement House,1340 Frankford Ave,35
+306,"The Living Word Evangelistic Missionary Church, Inc,",872 N 40th Street,306
+307,West Oak Lane Senior Center,7210 Ogontz Avenue,307
+308,Juniata Park Older Adult Center,1251 E. Sedgley Avenue,308
+309,Martin Luther King Older Adult Center,2100 W. Cecil B. Moore Ave.,309
+310,Bethesda Project - Spruce,1110 Spruce St,310
+311,Holy Flock Of Christ,1331 cottman Ave,311
+312,Fresh Anointing International Church,6804 Martin Mill Rd,312
+313,The R.E.I.D. Foundation,9150 Marshall St,313
+314,Feeding Fox Chase,934 Alburger St,314
+315,Somerton Interfaith Food Bank,510 Somerton Avenue,188
+316,"Ministry Headquarters, Inc",813 Densmore Road,316
+317,New Covenant Church,7500 Germantown Ave,317
+318,Mi Salud Wellness Center,200 E Wyoming Ave,82
+319,Victory Kingdom Fellowship Ministry,5745 N 5th St,319
+320,Asociación Puertorriqueños en Marcha,1116 E Luzerne Street,320
+321,Unbreakable ME Org,200 W Duncannon Ave,321
+322,Ambassador Seed of Love Church,1718 W Susquehanna Ave,322
+323,Bethesda Project,1917 W Oxford St,323
+324,Brothers of Strawberry Mansion,3218 W Susquehanna Avenue,141
+325,Godly Lado Of Worship (GLOW),2802 West Susquehanna Ave,325
+326,Berean Church,2101 N Broad St,326
+327,Rodeph Shalom Breaking Bread on Broad,615 N Broad St,233
+328,Our Brother's Place (Bethesda Project),907 Hamilton St,269
+329,Good Samaritan Food Pantry,827 N Franklin St,329
+330,Northeast Baptist Church,4744 Tackawanna St,176
+331,Mizpah SDA,4355 Paul St,162
+332,Rock of Salvation International Fellowship,1349 Unity Street,332
+333,House of Joy Multicultural Church,5100 Ditman Street,333
+334,Copower,4256 Paul Street,334
+335,The Mason Foundation,1225 Bridge St,335
+336,St. Michael's Lutheran Church,2139 E Cumberland Street,92
+337,Bethesda Project - North Broad,720 N Broad St,337
+338,Vine Memorial Baptist Church,5600 w girard Ave,338
+339,Strong Family Foundation,3136 West Gordon Street,339
+340,Holy Temple Holiness Church,2240-44 N 29TH St,340
+341,Calvary Community CDC,2431 N 5th St,341
+342,Pentecostal House of Prayer,2332 N 9TH Street,342
+343,COMHAR - Open Door Clubhouse,3147 Emerald St,343
+344,Mission of St. Joan of Arc,3546 Frankford Ave,344
+345,Rock Ministries of Philadelphia,2755 Kensington Ave,345
+346,Casa Mision de los Valientes,2033 East Allegheny Avenue,346
+347,Christian Worship Center,4520 Benner Street,347
+348,Kingdom Life Christian Center,6325 Frankford Ave,239
+349,Philadelphia Agents of God center,7160 State Rd,349
+350,Bethany A. M. E. Church,8898 Ashton Road,268
+351,Catholic Charities of Philadelphia,7340 Jackson Street,351
+352,Knights of the Kingdom,3539 Shelmire Ave,352
+353,Shalom Pentecostal Church,7319 State road,353
+354,Christ in the City,4433 Almond Street,354
+355,Faith Fellowship Baptist Church,2101 W 65th Ave,355
+356,Belfield Advisory Counsel,2109 W Chew Avenue,356
+357,Prayer Warrior Ministry,4822 Aspen Street,357
+358,SavannahCare Simple Senior Solutions,5601 Westminister Ave,358
+359,Howard L Lanier III Community Development Corporation,5240 Chestnut St,359
+360,Greater St Matthew’s Baptist Church,1538 W Wingohocking Street,360
+361,Northwest Community Court Program,2334 W Hunting Park Ave,361
+362,First Redemption Evangelical Church,4400 North Broad St,362
+363,House of Faith Outreach Ministry,1001 W Wingohocking Street,363
+364,FREE CHURCH OF ST JOHN,3076 Emerald St,364
+365,Jesus Christ In Power Ministries,1980 Church Lane,365
+366,Renaissance Haitian Baptist Church,4845-N 13th Street,366
+367,Hairston Hallway,5830 Kemble Avenue,367
+368,Liberia Medical Mission,6929 Dicks Avenue,368
+369,The Revelation Philadelphia Ministry Inc,6354 Saybrook Ave,369
+370,Refuge Helping Hands Food Pantry,6712 Upland Street,370
+371,Crusaders for Christ Evangelistic Church,1201 S 47th St,371
+372,Helping Hands for the Hungry,525 So Cobbs Creek Parkway,194
+373,The Common Place,5736 Chester Ave,373
+374,Calvary's New Breed/Mt. Calvary Family Worship Centee,1438 S 51st Street,374
+375,Tammi’s Pantry,917 S 50th Street,375
+376,We Love To Give,5315 Wingohocking terrace,376
+377,Germantown Community Fridge,19 E High St,67
+378,Ian-Yae’s In Touch,2524 N 27th St,110
+379,Soap,1400 Ellsworth St,379
+380,Bryant Baptist Church,1140-44 S 19th Street,380
+381,Bethesda Project,816 S 20th St,381
+382,Bethesda Project,700 Bainbridge St,382
+383,Bethesda Project,609 S 15th St,383
+384,Whitman Council Inc,2455 S 3rd Street,108
+385,Shall Never Thirst Ministries,132 Gladstone Street,385
+386,Haitian-American United For Change (HAUC),6059 Agusta Street,386
+387,Eglise Baptiste Schekina DE Philadelphia,7049 Castor Ave,387
+388,Calvary Association for the Empowerment of Families and Youth,6000 E Roosevelt Blvd,388
+389,Kitchen of Love,8500 pickering St,389
+390,The Children of The Promise,1454 Thouron Ave,390
+391,Sweet Union Baptist Church,1536 N 59th St,391
+392,Living Word Ministries International Philadelphia,1100 Cottman Avenue 2nd Floor,392
+393,African Immigrants Resources Center Inc.,8913 Brous Avenue,393
+394,Tabernacle of Spirit santo,6515 Bustleton Ave,394
+395,Hosanna Christian Life Center Inc,8410 Bustleton Ave,395
+396,St. Paul,8398 Lindbergh Blvd,265
+397,"Temple University Hospital, Episcopal Campus",100 E. Lehigh Ave.,397
+398,Philadelphia Housing Authority Emlen Arms,6733 Emlen St.,398
+399,Southwest Senior Center,6916 Elmwood Ave.,399
+400,Mann Older Adult Center,3201 N. 5th St.,400
+401,Northern Living Center,827 N Franklin St.,401
+402,Resurrection Community Church,6200 Dicks Ave,402
+403,Mt. Vernon Manor,769 N 39th St,403
+404,South Philly Older Adult Center,1430 East Passyunk Avenue,404

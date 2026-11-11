@@ -1,0 +1,26 @@
+category_id,category_name,storage_type,description
+1,Prepared Hot Meals,refrigerated,Cooked entrees and sides ready to reheat and serve
+2,Sandwiches & Wraps,refrigerated,"Pre-made sandwiches, wraps and cold boxed meals"
+3,Salads,refrigerated,"Packaged green, grain and pasta salads"
+4,Deli & Prepared Proteins,refrigerated,"Sliced deli meats, rotisserie chicken, cooked proteins"
+5,Fresh Fruit,refrigerated,Whole and cut fresh fruit
+6,Fresh Vegetables,refrigerated,Fresh vegetables and leafy greens
+7,Fresh Meat & Poultry,refrigerated,"Raw meat and poultry, kept cold"
+8,Fresh Seafood,refrigerated,"Raw fish and shellfish, kept cold"
+9,Milk,refrigerated,Fluid milk and milk alternatives
+10,Cheese & Yogurt,refrigerated,"Cheese, yogurt and other cultured dairy"
+11,Eggs,refrigerated,Shell eggs
+12,Bread & Rolls,shelf-stable,"Loaves, rolls, bagels and tortillas"
+13,Pastries & Desserts,shelf-stable,"Muffins, pastries, cakes and cookies"
+14,Frozen Meals,frozen,Frozen entrees and ready meals
+15,Frozen Meat & Poultry,frozen,"Frozen raw meat, poultry and fish"
+16,Frozen Fruits & Vegetables,frozen,Frozen produce
+17,Canned Fruits & Vegetables,shelf-stable,Canned and jarred produce
+18,Canned Proteins & Beans,shelf-stable,"Canned tuna, chicken, beans and legumes"
+19,"Rice, Pasta & Grains",shelf-stable,"Dry rice, pasta, oats and grains"
+20,Breakfast Cereal,shelf-stable,Boxed cereal and granola
+21,Soups & Broths,shelf-stable,Canned or boxed soups and broths
+22,Snacks,shelf-stable,"Crackers, chips, bars and nuts"
+23,Beverages & Juices,shelf-stable,"Water, juice and other drinks"
+24,Baby Food & Formula,shelf-stable,Infant formula and baby food
+25,"Condiments, Sauces & Oils",shelf-stable,"Sauces, spreads, oils and seasonings"
