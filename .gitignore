@@ -1,0 +1,36 @@
+# --- secrets: never commit credentials ---
+.env
+*.env
+**/config.local.*
+*.pem
+
+# --- regenerable bulk files (rebuild with the scripts) ---
+# python scripts/06_make_insert_scripts.py .
+sql/inserts/
+# python scripts/run_pipeline.py
+data/interim/donation_clean.csv
+data/interim/request_clean.csv
+
+# --- Python ---
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# --- Node (server / client, coming in M4) ---
+node_modules/
+dist/
+build/
+
+# --- LaTeX build files ---
+*.aux
+*.log
+*.out
+*.synctex.gz
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/

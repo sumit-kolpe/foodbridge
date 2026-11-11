@@ -1,0 +1,6 @@
+# keep data files byte-for-byte (no CRLF conversion on Windows)
+*.csv -text
+*.sql text eol=lf
+*.py  text eol=lf
+*.md  text eol=lf
+*.pdf binary
