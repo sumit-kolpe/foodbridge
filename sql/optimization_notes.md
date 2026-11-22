@@ -1,4 +1,17 @@
-# Optimization notes (preliminary, measured 2026-11-10 on a local PostgreSQL 16, 2 vCPU)
+# Optimization notes
+
+## Baseline on AWS RDS (2026-11-22, `sql/measure_runtime.sql`)
+
+These are `EXPLAIN (ANALYZE, BUFFERS)` execution times with only primary-key indexes, 3 runs per query.
+
+| Query | Run 1 (cold) | Run 2 | Run 3 | Average |
+|---|---:|---:|---:|---:|
+| Q10 avoidable food loss | 115.7 s | 112.0 s | 113.5 s | **113.7 s (1.9 min)** |
+| Q12 structurally unmet demand | 178.7 s | 177.3 s | 179.0 s | **178.3 s (3.0 min)** |
+
+The warm runs are no faster than the cold run, so the cost is CPU work in the plan (repeated sequential scans and re-aggregation), not disk reads. The RDS instance is about 2.5× slower than the local test machine.
+
+## Preliminary local measurements (2026-11-10, local PostgreSQL 16, 2 vCPU)
 
 These baseline measurements were taken on a local copy with no indexes beyond the primary keys. Re-measure on RDS with `EXPLAIN ANALYZE` for the final report, because RDS will be slower.
 
