@@ -1,0 +1,709 @@
+\documentclass[11pt,letterpaper]{article}
+% FoodBridge -- Milestone 4 API specification (CIS 5500, Group 25)
+% Monochrome layout: black, white and shades of gray only. pdfLaTeX / Overleaf.
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[margin=1in,headheight=14pt]{geometry}
+\usepackage{xcolor}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{xltabular}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{needspace}
+\usepackage{microtype}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{ruleGray}{gray}{0.55}
+\definecolor{boxGray}{gray}{0.93}
+\definecolor{metaGray}{gray}{0.35}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\setlength{\emergencystretch}{3em}
+\newcommand{\brk}{\penalty0\relax}
+\renewcommand{\arraystretch}{1.2}
+
+\titleformat{\section}{\Large\bfseries}{}{0pt}{}[{\color{ruleGray}\titlerule[0.6pt]}]
+\titlespacing*{\section}{0pt}{16pt}{8pt}
+\titleformat{\subsection}{\large\bfseries}{}{0pt}{}
+\titlespacing*{\subsection}{0pt}{16pt}{3pt}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\color{metaGray}FoodBridge --- Milestone 4: API Specification}
+\fancyhead[R]{\small\color{metaGray}CIS 5500 $\cdot$ Group 25}
+\fancyfoot[C]{\small\color{metaGray}\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\headrule}{{\color{ruleGray}\hrule width\headwidth height\headrulewidth}}
+
+% method + path banner for each route
+\newcommand{\routebar}[2]{%
+  \par\noindent\colorbox{boxGray}{\parbox{\dimexpr\linewidth-2\fboxsep}{%
+  \strut\textbf{\texttt{#1}}\quad\texttt{#2}\strut}}\par\smallskip}
+\newcommand{\kv}[2]{\textbf{#1:} #2\par}
+
+\begin{document}
+\begin{center}
+  {\LARGE\bfseries FoodBridge -- Milestone 4:\\[4pt] API Specification\par}
+  \vspace{8pt}
+  {\normalsize\color{metaGray} November 22, 2026 \quad$\cdot$\quad Group 25: Sumit Pradeep Kolpe, Urav Dalal, Jigar Shah, Rushabh Maru\par}
+  \vspace{4pt}
+  {\color{ruleGray}\rule{\linewidth}{0.8pt}}
+\end{center}
+
+The FoodBridge API exposes 19 routes: one for each of the 12 Milestone 3 queries (R1--R12, including the six complex queries Q7--Q12) and 7 auxiliary routes (A1--A7) for posting donations and requests, allocating food and tracking pickups. It is implemented in Node.js/Express with parameterized SQL on PostgreSQL (AWS RDS); the code is in \texttt{server/} of our repository.
+
+\section*{1. Conventions}
+
+\begin{xltabular}{\linewidth}{>{\bfseries}p{0.22\linewidth} >{\raggedright\arraybackslash}X}
+\toprule
+Base URL & \texttt{http://localhost:8080} during development (no path prefix). \texttt{GET /} returns a list of all routes. \\
+Format & Requests and responses are JSON (\texttt{Content-Type: application/json}). \\
+Success body & \texttt{\{ "data": ..., "meta": \{ ... \} \}}. \texttt{data} is an array for list routes and an object otherwise; \texttt{meta} carries paging, filters and totals. \\
+Error body & \texttt{\{ "error": \{ "code", "message", "details"? \} \}}, with code \texttt{BAD\_REQUEST}, \texttt{NOT\_FOUND}, \texttt{CONFLICT} or \texttt{INTERNAL\_ERROR}. \\
+Parameter location & \emph{path} (e.g.\ \texttt{:id}, read from \texttt{req.params}), \emph{query} (\texttt{?days=14}, read from \texttt{req.query}) or \emph{body} (JSON, POST/PATCH). Every parameter is validated before a query runs; invalid values return 400 with a message naming the parameter. \\
+Data types & \emph{integer}, \emph{number} (decimal), \emph{string}; \emph{timestamp} = \texttt{"YYYY-MM-DD HH:MM:SS"} in requests and \texttt{"YYYY-MM-DDTHH:MM:SS"} in responses (no time zone). \\
+Time (``now'') & The dataset is a snapshot taken at 2026-11-10 12:00:00. The API clock starts there and advances in real time while the server runs; it is used for every ``available'', ``last N days'' and deadline check, and reported as \texttt{as\_of}. \\
+Accounts & No login: donor and recipient actions name the organization by id (\texttt{donor\_org\_id}, \texttt{recipient\_org\_id}). \\
+\bottomrule
+\end{xltabular}
+
+\textbf{HTTP status codes.}
+\begin{xltabular}{\linewidth}{l X}
+\toprule
+\textbf{Code} & \textbf{Meaning} \\
+\midrule
+200 OK & Request succeeded \\
+201 Created & A donation, request or allocation was created \\
+400 Bad Request & Missing or invalid parameter, or malformed JSON \\
+404 Not Found & The organization, request, donation, allocation, category or route does not exist \\
+409 Conflict & A business rule would be violated (over-allocation, category mismatch, past deadline, wrong role, invalid status change) \\
+500 Internal Server Error & Unexpected server error \\
+503 Service Unavailable & \texttt{/health} only: database unreachable \\
+\bottomrule
+\end{xltabular}
+\section*{2. Route summary}
+{\small
+\begin{xltabular}{\linewidth}{l l >{\raggedright\arraybackslash}p{0.43\linewidth} >{\raggedright\arraybackslash}X}
+\toprule
+\textbf{\#} & \textbf{Method} & \textbf{Path} & \textbf{Query} \\
+\midrule
+\endhead
+R1 & \texttt{GET} & \texttt{/organizations} & Q1 \\
+R2 & \texttt{GET} & \texttt{/donations/available} & Q2 \\
+R3 & \texttt{GET} & \texttt{/organizations/:id/donation-summary} & Q3 \\
+R4 & \texttt{GET} & \texttt{/requests/:id/allocations} & Q4 \\
+R5 & \texttt{GET} & \texttt{/dashboard/kpis} & Q5 \\
+R6 & \texttt{GET} & \texttt{/categories/demand} & Q6 \\
+R7 & \texttt{GET} & \texttt{/analytics/monthly-fulfillment} & Q7 (complex) \\
+R8 & \texttt{GET} & \texttt{/analytics/donor-leaderboard} & Q8 (complex) \\
+R9 & \texttt{GET} & \texttt{/analytics/zip-gaps} & Q9 (complex) \\
+R10 & \texttt{GET} & \texttt{/analytics/avoidable-loss} & Q10 (complex, long-running) \\
+R11 & \texttt{GET} & \texttt{/analytics/fully-served-recipients} & Q11 (complex) \\
+R12 & \texttt{GET} & \texttt{/analytics/unmet-demand} & Q12 (complex, long-running) \\
+\midrule
+A1 & \texttt{GET} & \texttt{/health} & auxiliary (connection check) \\
+A2 & \texttt{GET} & \texttt{/categories} & auxiliary: SELECT FoodCategory \\
+A3 & \texttt{GET} & \texttt{/organizations/:id} & auxiliary: SELECT Organization \\
+A4 & \texttt{POST} & \texttt{/donations} & auxiliary: INSERT FoodDonation \\
+A5 & \texttt{POST} & \texttt{/requests} & auxiliary: INSERT RecipientRequest \\
+A6 & \texttt{POST} & \texttt{/allocations} & auxiliary: transaction (lock, check, insert) \\
+A7 & \texttt{PATCH} & \texttt{/allocations/:id/status} & auxiliary: transaction (update status) \\
+\bottomrule
+\end{xltabular}
+}
+\section*{3. Query routes (R1--R12)}
+Each route runs one Milestone 3 query with the parameters below.
+
+\needspace{12\baselineskip}
+\subsection*{R1. /organizations}
+\routebar{GET}{/organizations}
+\kv{Description}{Searches the organization directory by role, status, ZIP code and name, alphabetically, one page at a time.}
+\kv{Client feature}{Organizations page -- directory search box and filters}
+\kv{SQL}{Q1}
+\kv{Request parameters}{}
+\begin{xltabular}{\linewidth}{>{\ttfamily\raggedright\arraybackslash}p{0.2\linewidth} l l c l >{\raggedright\arraybackslash}X}
+\toprule
+\textrm{\textbf{Name}} & \textbf{In} & \textbf{Type} & \textbf{Req.} & \textbf{Default} & \textbf{Description} \\
+\midrule
+role & query & string & no & -- & ``donor'' or ``recipient'' (organizations of type both match either) \\
+status & query & string & no & -- & ``active'' or ``inactive'' \\
+zip & query & string & no & -- & 5-digit ZIP code \\
+search & query & string & no & -- & Case-insensitive part of the name (max 100 chars) \\
+page & query & integer & no & 1 & Page number ($\ge$ 1) \\
+page\_\brk{}size & query & integer & no & 20 & Rows per page (1--100) \\
+\bottomrule
+\end{xltabular}
+\kv{Response}{}
+\begin{xltabular}{\linewidth}{>{\ttfamily\raggedright\arraybackslash}p{0.36\linewidth} >{\raggedright\arraybackslash}p{0.19\linewidth} >{\raggedright\arraybackslash}X}
+\toprule
+\textrm{\textbf{Field}} & \textbf{Type} & \textbf{Description} \\
+\midrule
+data[] & array & Organizations (fields below) \\
+data[].\brk{}organization\_id & integer & Organization id (1--346 real Philadelphia sites, 347+ synthetic) \\
+data[].\brk{}organization\_name & string & Name \\
+data[].\brk{}organization\_type & string & donor, recipient or both \\
+data[].\brk{}address & string & Street address \\
+data[].\brk{}city & string & City \\
+data[].\brk{}zip\_code & string | null & 5-digit ZIP code \\
+data[].\brk{}contact\_information & string | null & Phone and/or email \\
+data[].\brk{}status & string & active or inactive \\
+meta.\brk{}page /\brk{} page\_size & integer & Echo of the paging parameters \\
+meta.\brk{}total & integer & Number of matching organizations \\
+meta.\brk{}total\_pages & integer & Number of pages \\
+\bottomrule
+\end{xltabular}
+\kv{Status codes}{200, 400}
+{\raggedright\textbf{Example:} {\small \texttt{GET /\brk{}organizations?\brk{}role=\brk{}recipient\&\brk{}status=\brk{}active\&\brk{}zip=\brk{}19140\&\brk{}search=\brk{}church}}\par}
+\needspace{12\baselineskip}
+\subsection*{R2. /donations/available}
+\routebar{GET}{/donations/available}
+\kv{Description}{Lists donations that are still available or partially allocated and whose pickup deadline has not passed, with servings not yet allocated, soonest pickup deadline first.}
+\kv{Client feature}{Food Donations page -- feed of food that can still be claimed}
+\kv{SQL}{Q2}
+\kv{Request parameters}{}
+\begin{xltabular}{\linewidth}{>{\ttfamily\raggedright\arraybackslash}p{0.2\linewidth} l l c l >{\raggedright\arraybackslash}X}
+\toprule
+\textrm{\textbf{Name}} & \textbf{In} & \textbf{Type} & \textbf{Req.} & \textbf{Default} & \textbf{Description} \\
+\midrule
+category\_\brk{}id & query & integer & no & all & Only this food category \\
+limit & query & integer & no & 50 & Maximum rows (1--200) \\
+\bottomrule
+\end{xltabular}
+\kv{Response}{}
+\begin{xltabular}{\linewidth}{>{\ttfamily\raggedright\arraybackslash}p{0.36\linewidth} >{\raggedright\arraybackslash}p{0.19\linewidth} >{\raggedright\arraybackslash}X}
+\toprule
+\textrm{\textbf{Field}} & \textbf{Type} & \textbf{Description} \\
+\midrule
+data[].\brk{}donation\_id & integer & Donation id \\
+data[].\brk{}donor\_org\_id /\brk{} donor /\brk{} donor\_zip & integer / string / string & Donor id, name and ZIP \\
+data[].\brk{}category\_id /\brk{} category\_name & integer / string & Food category \\
+data[].\brk{}storage\_type & string & refrigerated, frozen, shelf-stable or other \\
+data[].\brk{}quantity & integer & Servings donated \\
+data[].\brk{}remaining\_servings & integer & Servings not yet allocated \\
+data[].\brk{}donated\_at /\brk{} pickup\_deadline /\brk{} expires\_at & timestamp & Posted, pickup deadline and expiry times \\
+data[].\brk{}status & string & available or partially\_allocated \\
+meta.\brk{}as\_of & timestamp & The API clock used as ``now'' \\
+meta.\brk{}count & integer & Rows returned \\
+\bottomrule
+\end{xltabular}
+\kv{Status codes}{200, 400}
+{\raggedright\textbf{Example:} {\small \texttt{GET /\brk{}donations/\brk{}available?\brk{}category\_id=\brk{}12\&\brk{}limit=\brk{}20}}\par}
+\needspace{12\baselineskip}
+\subsection*{R3. /organizations/:id/donation-summary}
+\routebar{GET}{/organizations/:id/donation-summary}
+\kv{Description}{For one donor organization, returns the number of donations, total servings and average donation size in each food category.}
+\kv{Client feature}{Organization detail page -- donor profile}
+\kv{SQL}{Q3}
+\kv{Request parameters}{}
+\begin{xltabular}{\linewidth}{>{\ttfamily\raggedright\arraybackslash}p{0.2\linewidth} l l c l >{\raggedright\arraybackslash}X}
+\toprule
+\textrm{\textbf{Name}} & \textbf{In} & \textbf{Type} & \textbf{Req.} & \textbf{Default} & \textbf{Description} \\
+\midrule
+id & path & integer & yes & -- & Organization id \\
+\bottomrule
+\end{xltabular}
+\kv{Response}{}
+\begin{xltabular}{\linewidth}{>{\ttfamily\raggedright\arraybackslash}p{0.36\linewidth} >{\raggedright\arraybackslash}p{0.19\linewidth} >{\raggedright\arraybackslash}X}
+\toprule
+\textrm{\textbf{Field}} & \textbf{Type} & \textbf{Description} \\
+\midrule
+data[].\brk{}category\_id /\brk{} category\_name & integer / string & Food category \\
+data[].\brk{}donations & integer & Donations in the category \\
+data[].\brk{}servings\_donated & integer & Total servings \\
+data[].\brk{}avg\_servings & number & Average servings per donation \\
+meta.\brk{}organization\_id /\brk{} organization\_name & integer / string & The organization \\
+meta.\brk{}total\_donations /\brk{} total\_servings\_donated & integer & Totals over all categories \\
+\bottomrule
+\end{xltabular}
+\kv{Status codes}{200, 400, 404 (unknown organization)}
+{\raggedright\textbf{Example:} {\small \texttt{GET /\brk{}organizations/\brk{}400/\brk{}donation-summary}}\par}
+\needspace{12\baselineskip}
+\subsection*{R4. /requests/:id/allocations}
+\routebar{GET}{/requests/:id/allocations}
+\kv{Description}{Lists every allocation made against one request: the supplying donor, servings, and pickup/delivery status and times.}
+\kv{Client feature}{Recipient Requests page -- request tracking}
+\kv{SQL}{Q4}
+\kv{Request parameters}{}
+\begin{xltabular}{\linewidth}{>{\ttfamily\raggedright\arraybackslash}p{0.2\linewidth} l l c l >{\raggedright\arraybackslash}X}
+\toprule
+\textrm{\textbf{Name}} & \textbf{In} & \textbf{Type} & \textbf{Req.} & \textbf{Default} & \textbf{Description} \\
+\midrule
+id & path & integer & yes & -- & Request id \\
+\bottomrule
+\end{xltabular}
+\kv{Response}{}
+\begin{xltabular}{\linewidth}{>{\ttfamily\raggedright\arraybackslash}p{0.36\linewidth} >{\raggedright\arraybackslash}p{0.19\linewidth} >{\raggedright\arraybackslash}X}
+\toprule
+\textrm{\textbf{Field}} & \textbf{Type} & \textbf{Description} \\
+\midrule
+data[].\brk{}allocation\_id /\brk{} donation\_id & integer & Allocation and donation ids \\
+data[].\brk{}donor\_org\_id /\brk{} donor & integer / string & Supplying donor \\
+data[].\brk{}quantity\_allocated & integer & Servings \\
+data[].\brk{}status & string & Allocation status \\
+data[].\brk{}allocated\_at /\brk{} picked\_up\_at /\brk{} delivered\_at & timestamp | null & Timeline \\
+meta.\brk{}request & object & The request (request\_id, recipient\_org\_id, category\_id, requested\_quantity, requested\_at, needed\_by, status) \\
+meta.\brk{}servings\_allocated & integer & Servings in non-cancelled allocations \\
+meta.\brk{}servings\_delivered & integer & Servings delivered \\
+\bottomrule
+\end{xltabular}
+\kv{Status codes}{200, 400, 404 (unknown request)}
+{\raggedright\textbf{Example:} {\small \texttt{GET /\brk{}requests/\brk{}100006/\brk{}allocations}}\par}
+\needspace{12\baselineskip}
+\subsection*{R5. /dashboard/kpis}
+\routebar{GET}{/dashboard/kpis}
+\kv{Description}{Returns the platform headline numbers in one object.}
+\kv{Client feature}{Dashboard -- headline numbers}
+\kv{SQL}{Q5}
+\kv{Request parameters}{none}
+\kv{Response}{}
+\begin{xltabular}{\linewidth}{>{\ttfamily\raggedright\arraybackslash}p{0.36\linewidth} >{\raggedright\arraybackslash}p{0.19\linewidth} >{\raggedright\arraybackslash}X}
+\toprule
+\textrm{\textbf{Field}} & \textbf{Type} & \textbf{Description} \\
+\midrule
+data.\brk{}total\_allocations & integer & All allocations \\
+data.\brk{}delivered\_allocations & integer & Allocations delivered \\
+data.\brk{}servings\_delivered & integer & Servings delivered \\
+data.\brk{}servings\_in\_transit & integer & Servings pending, confirmed or picked up \\
+data.\brk{}cancelled\_allocations & integer & Allocations cancelled \\
+meta.\brk{}as\_of & timestamp & API clock \\
+\bottomrule
+\end{xltabular}
+\kv{Status codes}{200}
+{\raggedright\textbf{Example:} {\small \texttt{GET /\brk{}dashboard/\brk{}kpis}}\par}
+\needspace{12\baselineskip}
+\subsection*{R6. /categories/demand}
+\routebar{GET}{/categories/demand}
+\kv{Description}{Counts requests and requested servings per food category over the last N days, busiest categories first.}
+\kv{Client feature}{Dashboard / Recipient Requests page -- demand by category}
+\kv{SQL}{Q6}
+\kv{Request parameters}{}
+\begin{xltabular}{\linewidth}{>{\ttfamily\raggedright\arraybackslash}p{0.2\linewidth} l l c l >{\raggedright\arraybackslash}X}
+\toprule
+\textrm{\textbf{Name}} & \textbf{In} & \textbf{Type} & \textbf{Req.} & \textbf{Default} & \textbf{Description} \\
+\midrule
+days & query & integer & no & 30 & Window length in days (1--730) \\
+\bottomrule
+\end{xltabular}
+\kv{Response}{}
+\begin{xltabular}{\linewidth}{>{\ttfamily\raggedright\arraybackslash}p{0.36\linewidth} >{\raggedright\arraybackslash}p{0.19\linewidth} >{\raggedright\arraybackslash}X}
+\toprule
+\textrm{\textbf{Field}} & \textbf{Type} & \textbf{Description} \\
+\midrule
+data[].\brk{}category\_id /\brk{} category\_name & integer / string & Food category \\
+data[].\brk{}storage\_type & string & Storage type \\
+data[].\brk{}requests & integer & Requests in the window \\
+data[].\brk{}servings\_requested & integer & Servings requested \\
+meta.\brk{}as\_of /\brk{} days & timestamp / integer & Window end and length \\
+\bottomrule
+\end{xltabular}
+\kv{Status codes}{200, 400}
+{\raggedright\textbf{Example:} {\small \texttt{GET /\brk{}categories/\brk{}demand?\brk{}days=\brk{}30}}\par}
+\needspace{12\baselineskip}
+\subsection*{R7. /analytics/monthly-fulfillment}
+\routebar{GET}{/analytics/monthly-fulfillment}
+\kv{Description}{For each month and food category, compares servings donated, requested and actually delivered, and the share of demand met.}
+\kv{Client feature}{Analytics page -- supply vs. demand trend chart}
+\kv{SQL}{Q7 (complex)}
+\kv{Request parameters}{}
+\begin{xltabular}{\linewidth}{>{\ttfamily\raggedright\arraybackslash}p{0.2\linewidth} l l c l >{\raggedright\arraybackslash}X}
+\toprule
+\textrm{\textbf{Name}} & \textbf{In} & \textbf{Type} & \textbf{Req.} & \textbf{Default} & \textbf{Description} \\
+\midrule
+category\_\brk{}id & query & integer & no & all & Only this food category \\
+from & query & string (YYYY-MM) & no & 2025-01 & First month \\
+to & query & string (YYYY-MM) & no & current month & Last month (must be $\ge$ from) \\
+\bottomrule
+\end{xltabular}
+\kv{Response}{}
+\begin{xltabular}{\linewidth}{>{\ttfamily\raggedright\arraybackslash}p{0.36\linewidth} >{\raggedright\arraybackslash}p{0.19\linewidth} >{\raggedright\arraybackslash}X}
+\toprule
+\textrm{\textbf{Field}} & \textbf{Type} & \textbf{Description} \\
+\midrule
+data[].\brk{}month & string & YYYY-MM \\
+data[].\brk{}category\_id /\brk{} category\_name & integer / string & Food category \\
+data[].\brk{}servings\_donated & integer & Servings donated in the month \\
+data[].\brk{}servings\_requested & integer & Servings requested in the month \\
+data[].\brk{}servings\_delivered & integer & Servings delivered against those requests \\
+data[].\brk{}demand\_met\_pct & number | null & Delivered / requested x 100 \\
+meta.\brk{}from /\brk{} to /\brk{} category\_id & string / string / integer & Echo of the filters \\
+\bottomrule
+\end{xltabular}
+\kv{Status codes}{200, 400}
+{\raggedright\textbf{Example:} {\small \texttt{GET /\brk{}analytics/\brk{}monthly-fulfillment?\brk{}from=\brk{}2026-01\&\brk{}to=\brk{}2026-10\&\brk{}category\_id=\brk{}1}}\par}
+\needspace{12\baselineskip}
+\subsection*{R8. /analytics/donor-leaderboard}
+\routebar{GET}{/analytics/donor-leaderboard}
+\kv{Description}{Ranks donors with at least N donations by servings that reached a recipient, and compares each donor's delivery rate with the platform-wide rate.}
+\kv{Client feature}{Analytics page -- donor leaderboard}
+\kv{SQL}{Q8 (complex)}
+\kv{Request parameters}{}
+\begin{xltabular}{\linewidth}{>{\ttfamily\raggedright\arraybackslash}p{0.2\linewidth} l l c l >{\raggedright\arraybackslash}X}
+\toprule
+\textrm{\textbf{Name}} & \textbf{In} & \textbf{Type} & \textbf{Req.} & \textbf{Default} & \textbf{Description} \\
+\midrule
+min\_\brk{}donations & query & integer & no & 20 & Minimum donations to be ranked ($\ge$ 1) \\
+limit & query & integer & no & 25 & Maximum rows (1--500) \\
+\bottomrule
+\end{xltabular}
+\kv{Response}{}
+\begin{xltabular}{\linewidth}{>{\ttfamily\raggedright\arraybackslash}p{0.36\linewidth} >{\raggedright\arraybackslash}p{0.19\linewidth} >{\raggedright\arraybackslash}X}
+\toprule
+\textrm{\textbf{Field}} & \textbf{Type} & \textbf{Description} \\
+\midrule
+data[].\brk{}rank\_by\_delivered & integer & Rank by servings delivered \\
+data[].\brk{}organization\_id /\brk{} organization\_name /\brk{} zip\_code & integer / string / string & Donor \\
+data[].\brk{}donations & integer & Donations (excluding cancelled) \\
+data[].\brk{}servings\_donated /\brk{} servings\_delivered & integer & Servings given and delivered \\
+data[].\brk{}delivery\_rate\_pct & number & Delivered / donated x 100 \\
+data[].\brk{}vs\_platform\_pct\_points & number & Difference from the platform-wide rate \\
+\bottomrule
+\end{xltabular}
+\kv{Status codes}{200, 400}
+{\raggedright\textbf{Example:} {\small \texttt{GET /\brk{}analytics/\brk{}donor-leaderboard?\brk{}min\_donations=\brk{}20\&\brk{}limit=\brk{}10}}\par}
+\needspace{12\baselineskip}
+\subsection*{R9. /analytics/zip-gaps}
+\routebar{GET}{/analytics/zip-gaps}
+\kv{Description}{For each ZIP code, computes undelivered servings of requests, active recipient sites and locally donated servings, ranked by unmet need per site.}
+\kv{Client feature}{Analytics page -- map of unmet need by ZIP code}
+\kv{SQL}{Q9 (complex)}
+\kv{Request parameters}{}
+\begin{xltabular}{\linewidth}{>{\ttfamily\raggedright\arraybackslash}p{0.2\linewidth} l l c l >{\raggedright\arraybackslash}X}
+\toprule
+\textrm{\textbf{Name}} & \textbf{In} & \textbf{Type} & \textbf{Req.} & \textbf{Default} & \textbf{Description} \\
+\midrule
+limit & query & integer & no & 50 & Maximum ZIP codes (1--100) \\
+\bottomrule
+\end{xltabular}
+\kv{Response}{}
+\begin{xltabular}{\linewidth}{>{\ttfamily\raggedright\arraybackslash}p{0.36\linewidth} >{\raggedright\arraybackslash}p{0.19\linewidth} >{\raggedright\arraybackslash}X}
+\toprule
+\textrm{\textbf{Field}} & \textbf{Type} & \textbf{Description} \\
+\midrule
+data[].\brk{}gap\_rank & integer & Rank by unmet servings per site \\
+data[].\brk{}zip\_code & string & ZIP code \\
+data[].\brk{}unmet\_servings /\brk{} unmet\_requests & integer & Undelivered servings and requests \\
+data[].\brk{}active\_recipient\_sites & integer & Active recipient organizations in the ZIP \\
+data[].\brk{}servings\_donated\_locally & integer & Servings donated by donors in the ZIP \\
+data[].\brk{}unmet\_per\_site & number & Unmet servings per active site \\
+\bottomrule
+\end{xltabular}
+\kv{Status codes}{200, 400}
+{\raggedright\textbf{Example:} {\small \texttt{GET /\brk{}analytics/\brk{}zip-gaps?\brk{}limit=\brk{}10}}\par}
+\needspace{12\baselineskip}
+\subsection*{R10. /analytics/avoidable-loss}
+\routebar{GET}{/analytics/avoidable-loss}
+\kv{Description}{Finds donations from the last N days that expired with servings left over even though a compatible request (same category, open during the pickup window, still short of servings) existed; totals per category and donor.}
+\kv{Client feature}{Analytics page -- avoidable food loss}
+\kv{SQL}{Q10 (complex, long-running)}
+\kv{Request parameters}{}
+\begin{xltabular}{\linewidth}{>{\ttfamily\raggedright\arraybackslash}p{0.2\linewidth} l l c l >{\raggedright\arraybackslash}X}
+\toprule
+\textrm{\textbf{Name}} & \textbf{In} & \textbf{Type} & \textbf{Req.} & \textbf{Default} & \textbf{Description} \\
+\midrule
+days & query & integer & no & 14 & Window length in days (1--90) \\
+limit & query & integer & no & 25 & Maximum rows (1--200) \\
+\bottomrule
+\end{xltabular}
+\kv{Response}{}
+\begin{xltabular}{\linewidth}{>{\ttfamily\raggedright\arraybackslash}p{0.36\linewidth} >{\raggedright\arraybackslash}p{0.19\linewidth} >{\raggedright\arraybackslash}X}
+\toprule
+\textrm{\textbf{Field}} & \textbf{Type} & \textbf{Description} \\
+\midrule
+data[].\brk{}category\_id /\brk{} category\_name & integer / string & Food category \\
+data[].\brk{}donor\_org\_id /\brk{} donor & integer / string & Donor \\
+data[].\brk{}avoidable\_expired\_donations & integer & Expired donations that had a compatible request \\
+data[].\brk{}avoidable\_lost\_servings & integer & Servings lost that could have been placed \\
+meta.\brk{}as\_of /\brk{} days /\brk{} limit & timestamp / integer / integer & Window and limit \\
+\bottomrule
+\end{xltabular}
+\kv{Status codes}{200, 400}
+{\raggedright\textbf{Example:} {\small \texttt{GET /\brk{}analytics/\brk{}avoidable-loss?\brk{}days=\brk{}14\&\brk{}limit=\brk{}10}}\par}
+\needspace{12\baselineskip}
+\subsection*{R11. /analytics/fully-served-recipients}
+\routebar{GET}{/analytics/fully-served-recipients}
+\kv{Description}{Lists active recipients that, in the last N days, received at least one delivery in every food category they requested (relational division with double NOT EXISTS).}
+\kv{Client feature}{Analytics page -- recipient coverage}
+\kv{SQL}{Q11 (complex)}
+\kv{Request parameters}{}
+\begin{xltabular}{\linewidth}{>{\ttfamily\raggedright\arraybackslash}p{0.2\linewidth} l l c l >{\raggedright\arraybackslash}X}
+\toprule
+\textrm{\textbf{Name}} & \textbf{In} & \textbf{Type} & \textbf{Req.} & \textbf{Default} & \textbf{Description} \\
+\midrule
+days & query & integer & no & 180 & Window length in days (1--730) \\
+\bottomrule
+\end{xltabular}
+\kv{Response}{}
+\begin{xltabular}{\linewidth}{>{\ttfamily\raggedright\arraybackslash}p{0.36\linewidth} >{\raggedright\arraybackslash}p{0.19\linewidth} >{\raggedright\arraybackslash}X}
+\toprule
+\textrm{\textbf{Field}} & \textbf{Type} & \textbf{Description} \\
+\midrule
+data[].\brk{}organization\_id /\brk{} organization\_name /\brk{} zip\_code & integer / string / string & Recipient \\
+data[].\brk{}categories\_requested & integer & Distinct categories requested \\
+data[].\brk{}requests & integer & Requests in the window \\
+data[].\brk{}servings\_received & integer & Servings delivered \\
+meta.\brk{}as\_of /\brk{} days /\brk{} count & timestamp / integer / integer & Window and row count \\
+\bottomrule
+\end{xltabular}
+\kv{Status codes}{200, 400}
+{\raggedright\textbf{Example:} {\small \texttt{GET /\brk{}analytics/\brk{}fully-served-recipients?\brk{}days=\brk{}180}}\par}
+\needspace{12\baselineskip}
+\subsection*{R12. /analytics/unmet-demand}
+\routebar{GET}{/analytics/unmet-demand}
+\kv{Description}{Finds requests from the last N days whose outstanding servings exceed all remaining servings of compatible donations, and reports per category the number of such requests, recipients affected and total shortfall.}
+\kv{Client feature}{Recipient Requests page (``at risk'') and Analytics page}
+\kv{SQL}{Q12 (complex, long-running)}
+\kv{Request parameters}{}
+\begin{xltabular}{\linewidth}{>{\ttfamily\raggedright\arraybackslash}p{0.2\linewidth} l l c l >{\raggedright\arraybackslash}X}
+\toprule
+\textrm{\textbf{Name}} & \textbf{In} & \textbf{Type} & \textbf{Req.} & \textbf{Default} & \textbf{Description} \\
+\midrule
+days & query & integer & no & 14 & Window length in days (1--90) \\
+\bottomrule
+\end{xltabular}
+\kv{Response}{}
+\begin{xltabular}{\linewidth}{>{\ttfamily\raggedright\arraybackslash}p{0.36\linewidth} >{\raggedright\arraybackslash}p{0.19\linewidth} >{\raggedright\arraybackslash}X}
+\toprule
+\textrm{\textbf{Field}} & \textbf{Type} & \textbf{Description} \\
+\midrule
+data[].\brk{}category\_id /\brk{} category\_name & integer / string & Food category \\
+data[].\brk{}unmeetable\_requests & integer & Requests that cannot be covered by available supply \\
+data[].\brk{}recipients\_affected & integer & Distinct recipients \\
+data[].\brk{}total\_shortfall\_servings & integer & Outstanding minus compatible supply \\
+meta.\brk{}as\_of /\brk{} days & timestamp / integer & Window \\
+\bottomrule
+\end{xltabular}
+\kv{Status codes}{200, 400}
+{\raggedright\textbf{Example:} {\small \texttt{GET /\brk{}analytics/\brk{}unmet-demand?\brk{}days=\brk{}14}}\par}
+\section*{4. Auxiliary routes (A1--A7)}
+\needspace{12\baselineskip}
+\subsection*{A1. /health}
+\routebar{GET}{/health}
+\kv{Description}{Reports whether the API is running and can reach the database.}
+\kv{Client feature}{All pages -- connection check}
+\kv{SQL}{--}
+\kv{Request parameters}{none}
+\kv{Response}{}
+\begin{xltabular}{\linewidth}{>{\ttfamily\raggedright\arraybackslash}p{0.36\linewidth} >{\raggedright\arraybackslash}p{0.19\linewidth} >{\raggedright\arraybackslash}X}
+\toprule
+\textrm{\textbf{Field}} & \textbf{Type} & \textbf{Description} \\
+\midrule
+status & string & ``ok'' or ``error'' \\
+database & string & ``connected'' or ``unreachable'' \\
+organizations & integer & Row count of Organization (sanity check) \\
+as\_of & timestamp & API clock \\
+\bottomrule
+\end{xltabular}
+\kv{Status codes}{200, 503 (database unreachable)}
+{\raggedright\textbf{Example:} {\small \texttt{GET /\brk{}health}}\par}
+\needspace{12\baselineskip}
+\subsection*{A2. /categories}
+\routebar{GET}{/categories}
+\kv{Description}{Lists all food categories alphabetically.}
+\kv{Client feature}{All forms -- category dropdowns and filters}
+\kv{SQL}{SELECT on FoodCategory}
+\kv{Request parameters}{none}
+\kv{Response}{}
+\begin{xltabular}{\linewidth}{>{\ttfamily\raggedright\arraybackslash}p{0.36\linewidth} >{\raggedright\arraybackslash}p{0.19\linewidth} >{\raggedright\arraybackslash}X}
+\toprule
+\textrm{\textbf{Field}} & \textbf{Type} & \textbf{Description} \\
+\midrule
+data[].\brk{}category\_id & integer & Category id \\
+data[].\brk{}category\_name & string & Name \\
+data[].\brk{}storage\_type & string & Storage type \\
+data[].\brk{}description & string & Description \\
+\bottomrule
+\end{xltabular}
+\kv{Status codes}{200}
+{\raggedright\textbf{Example:} {\small \texttt{GET /\brk{}categories}}\par}
+\needspace{12\baselineskip}
+\subsection*{A3. /organizations/:id}
+\routebar{GET}{/organizations/:id}
+\kv{Description}{Returns one organization.}
+\kv{Client feature}{Organization detail page -- header}
+\kv{SQL}{SELECT on Organization}
+\kv{Request parameters}{}
+\begin{xltabular}{\linewidth}{>{\ttfamily\raggedright\arraybackslash}p{0.2\linewidth} l l c l >{\raggedright\arraybackslash}X}
+\toprule
+\textrm{\textbf{Name}} & \textbf{In} & \textbf{Type} & \textbf{Req.} & \textbf{Default} & \textbf{Description} \\
+\midrule
+id & path & integer & yes & -- & Organization id \\
+\bottomrule
+\end{xltabular}
+\kv{Response}{}
+\begin{xltabular}{\linewidth}{>{\ttfamily\raggedright\arraybackslash}p{0.36\linewidth} >{\raggedright\arraybackslash}p{0.19\linewidth} >{\raggedright\arraybackslash}X}
+\toprule
+\textrm{\textbf{Field}} & \textbf{Type} & \textbf{Description} \\
+\midrule
+data.\brk{}organization\_id & integer & Organization id (1--346 real Philadelphia sites, 347+ synthetic) \\
+data.\brk{}organization\_name & string & Name \\
+data.\brk{}organization\_type & string & donor, recipient or both \\
+data.\brk{}address & string & Street address \\
+data.\brk{}city & string & City \\
+data.\brk{}zip\_code & string | null & 5-digit ZIP code \\
+data.\brk{}contact\_information & string | null & Phone and/or email \\
+data.\brk{}status & string & active or inactive \\
+\bottomrule
+\end{xltabular}
+\kv{Status codes}{200, 400, 404}
+{\raggedright\textbf{Example:} {\small \texttt{GET /\brk{}organizations/\brk{}178}}\par}
+\needspace{12\baselineskip}
+\subsection*{A4. /donations}
+\routebar{POST}{/donations}
+\kv{Description}{A donor posts surplus food. donated\_at is set to the API clock and the status starts as available. The organization must be an active donor (or both).}
+\kv{Client feature}{Food Donations page -- ``Post surplus food'' form}
+\kv{SQL}{INSERT INTO FoodDonation}
+\kv{Request parameters}{}
+\begin{xltabular}{\linewidth}{>{\ttfamily\raggedright\arraybackslash}p{0.2\linewidth} l l c l >{\raggedright\arraybackslash}X}
+\toprule
+\textrm{\textbf{Name}} & \textbf{In} & \textbf{Type} & \textbf{Req.} & \textbf{Default} & \textbf{Description} \\
+\midrule
+donor\_\brk{}org\_\brk{}id & body & integer & yes & -- & Donating organization \\
+category\_\brk{}id & body & integer & yes & -- & Food category \\
+quantity & body & integer & yes & -- & Servings (1--100000) \\
+expires\_\brk{}at & body & timestamp & yes & -- & Expiry; must be in the future \\
+pickup\_\brk{}deadline & body & timestamp & yes & -- & Must be between now and expires\_at \\
+\bottomrule
+\end{xltabular}
+\kv{Response}{}
+\begin{xltabular}{\linewidth}{>{\ttfamily\raggedright\arraybackslash}p{0.36\linewidth} >{\raggedright\arraybackslash}p{0.19\linewidth} >{\raggedright\arraybackslash}X}
+\toprule
+\textrm{\textbf{Field}} & \textbf{Type} & \textbf{Description} \\
+\midrule
+data.\brk{}donation\_id & integer & New donation id \\
+data.\brk{}donor\_org\_id /\brk{} category\_id /\brk{} quantity & integer & As submitted \\
+data.\brk{}donated\_at /\brk{} expires\_at /\brk{} pickup\_deadline & timestamp & Times \\
+data.\brk{}status & string & ``available'' \\
+\bottomrule
+\end{xltabular}
+\kv{Status codes}{201, 400, 404 (organization/category), 409 (not a donor or inactive)}
+{\raggedright\textbf{Example:} {\small \texttt{POST /\brk{}donations  \{"donor\_org\_id": 400,\brk{} "category\_id": 1,\brk{} "quantity": 40,\brk{} "expires\_at": "2026-11-11 12:00:00",\brk{} "pickup\_deadline": "2026-11-10 18:00:00"\}}}\par}
+\needspace{12\baselineskip}
+\subsection*{A5. /requests}
+\routebar{POST}{/requests}
+\kv{Description}{A recipient posts a food need. requested\_at is set to the API clock and the status starts as open. The organization must be an active recipient (or both).}
+\kv{Client feature}{Recipient Requests page -- ``Request food'' form}
+\kv{SQL}{INSERT INTO RecipientRequest}
+\kv{Request parameters}{}
+\begin{xltabular}{\linewidth}{>{\ttfamily\raggedright\arraybackslash}p{0.2\linewidth} l l c l >{\raggedright\arraybackslash}X}
+\toprule
+\textrm{\textbf{Name}} & \textbf{In} & \textbf{Type} & \textbf{Req.} & \textbf{Default} & \textbf{Description} \\
+\midrule
+recipient\_\brk{}org\_\brk{}id & body & integer & yes & -- & Requesting organization \\
+category\_\brk{}id & body & integer & yes & -- & Food category \\
+requested\_\brk{}quantity & body & integer & yes & -- & Servings (1--100000) \\
+needed\_\brk{}by & body & timestamp & yes & -- & Deadline; must not be in the past \\
+\bottomrule
+\end{xltabular}
+\kv{Response}{}
+\begin{xltabular}{\linewidth}{>{\ttfamily\raggedright\arraybackslash}p{0.36\linewidth} >{\raggedright\arraybackslash}p{0.19\linewidth} >{\raggedright\arraybackslash}X}
+\toprule
+\textrm{\textbf{Field}} & \textbf{Type} & \textbf{Description} \\
+\midrule
+data.\brk{}request\_id & integer & New request id \\
+data.\brk{}recipient\_org\_id /\brk{} category\_id /\brk{} requested\_quantity & integer & As submitted \\
+data.\brk{}requested\_at /\brk{} needed\_by & timestamp & Times \\
+data.\brk{}status & string & ``open'' \\
+\bottomrule
+\end{xltabular}
+\kv{Status codes}{201, 400, 404 (organization/category), 409 (not a recipient or inactive)}
+{\raggedright\textbf{Example:} {\small \texttt{POST /\brk{}requests  \{"recipient\_org\_id": 178,\brk{} "category\_id": 1,\brk{} "requested\_quantity": 30,\brk{} "needed\_by": "2026-11-11 00:00:00"\}}}\par}
+\needspace{12\baselineskip}
+\subsection*{A6. /allocations}
+\routebar{POST}{/allocations}
+\kv{Description}{Allocates servings of a donation to a request inside one transaction. Both rows are locked; the route checks that the donation is claimable and the request still open, that the categories match, that neither deadline has passed, and that the quantity does not exceed the donation's remaining servings or the request's outstanding need. It then inserts the allocation (status pending) and recomputes both statuses.}
+\kv{Client feature}{Allocations page -- ``Allocate'' action matching a donation to a request}
+\kv{SQL}{Transaction: SELECT ... FOR UPDATE, INSERT INTO Allocation, UPDATE statuses}
+\kv{Request parameters}{}
+\begin{xltabular}{\linewidth}{>{\ttfamily\raggedright\arraybackslash}p{0.2\linewidth} l l c l >{\raggedright\arraybackslash}X}
+\toprule
+\textrm{\textbf{Name}} & \textbf{In} & \textbf{Type} & \textbf{Req.} & \textbf{Default} & \textbf{Description} \\
+\midrule
+donation\_\brk{}id & body & integer & yes & -- & Donation \\
+request\_\brk{}id & body & integer & yes & -- & Request \\
+quantity & body & integer & yes & -- & Servings to allocate ($\ge$ 1) \\
+\bottomrule
+\end{xltabular}
+\kv{Response}{}
+\begin{xltabular}{\linewidth}{>{\ttfamily\raggedright\arraybackslash}p{0.36\linewidth} >{\raggedright\arraybackslash}p{0.19\linewidth} >{\raggedright\arraybackslash}X}
+\toprule
+\textrm{\textbf{Field}} & \textbf{Type} & \textbf{Description} \\
+\midrule
+data.\brk{}allocation\_id & integer & Allocation id \\
+data.\brk{}donation\_id & integer & Donation the servings come from \\
+data.\brk{}request\_id & integer & Request the servings go to \\
+data.\brk{}quantity\_allocated & integer & Servings allocated \\
+data.\brk{}allocated\_at & timestamp & When the allocation was made \\
+data.\brk{}status & string & pending, confirmed, picked\_up, delivered or cancelled \\
+data.\brk{}picked\_up\_at & timestamp | null & Pickup time (set at picked\_up) \\
+data.\brk{}delivered\_at & timestamp | null & Delivery time (set at delivered) \\
+meta.\brk{}donation\_status & string & Donation status after the change \\
+meta.\brk{}request\_status & string & Request status after the change \\
+\bottomrule
+\end{xltabular}
+\kv{Status codes}{201, 400, 404 (donation/request), 409 (rule violated; details give remaining and outstanding servings)}
+{\raggedright\textbf{Example:} {\small \texttt{POST /\brk{}allocations  \{"donation\_id": 150001,\brk{} "request\_id": 120001,\brk{} "quantity": 30\}}}\par}
+\needspace{12\baselineskip}
+\subsection*{A7. /allocations/:id/status}
+\routebar{PATCH}{/allocations/:id/status}
+\kv{Description}{Moves an allocation to its next status and stamps the time: pending $\rightarrow$ confirmed $\rightarrow$ picked\_up $\rightarrow$ delivered; pending or confirmed $\rightarrow$ cancelled (cancelled servings are released). The donation and request statuses are recomputed.}
+\kv{Client feature}{Allocations page -- pickup and delivery tracking buttons}
+\kv{SQL}{Transaction: UPDATE Allocation, UPDATE statuses}
+\kv{Request parameters}{}
+\begin{xltabular}{\linewidth}{>{\ttfamily\raggedright\arraybackslash}p{0.2\linewidth} l l c l >{\raggedright\arraybackslash}X}
+\toprule
+\textrm{\textbf{Name}} & \textbf{In} & \textbf{Type} & \textbf{Req.} & \textbf{Default} & \textbf{Description} \\
+\midrule
+id & path & integer & yes & -- & Allocation id \\
+status & body & string & yes & -- & confirmed, picked\_up, delivered or cancelled \\
+\bottomrule
+\end{xltabular}
+\kv{Response}{}
+\begin{xltabular}{\linewidth}{>{\ttfamily\raggedright\arraybackslash}p{0.36\linewidth} >{\raggedright\arraybackslash}p{0.19\linewidth} >{\raggedright\arraybackslash}X}
+\toprule
+\textrm{\textbf{Field}} & \textbf{Type} & \textbf{Description} \\
+\midrule
+data.\brk{}allocation\_id & integer & Allocation id \\
+data.\brk{}donation\_id & integer & Donation the servings come from \\
+data.\brk{}request\_id & integer & Request the servings go to \\
+data.\brk{}quantity\_allocated & integer & Servings allocated \\
+data.\brk{}allocated\_at & timestamp & When the allocation was made \\
+data.\brk{}status & string & pending, confirmed, picked\_up, delivered or cancelled \\
+data.\brk{}picked\_up\_at & timestamp | null & Pickup time (set at picked\_up) \\
+data.\brk{}delivered\_at & timestamp | null & Delivery time (set at delivered) \\
+meta.\brk{}donation\_status & string & Donation status after the change \\
+meta.\brk{}request\_status & string & Request status after the change \\
+\bottomrule
+\end{xltabular}
+\kv{Status codes}{200, 400, 404, 409 (transition not allowed; details list allowed next statuses)}
+{\raggedright\textbf{Example:} {\small \texttt{PATCH /\brk{}allocations/\brk{}198416/\brk{}status  \{"status": "picked\_up"\}}}\par}
+\needspace{22\baselineskip}
+
+\section*{5. Query performance: Q10 and Q12 (Milestone 3 feedback)}
+
+Q10 (avoidable food loss, route R10) and Q12 (structurally unmet demand, route R12) are our long-running queries. We measured both with \texttt{EXPLAIN (ANALYZE, BUFFERS)} on our AWS RDS PostgreSQL database before any optimization, with only the primary-key indexes; each query was run three times (script: \texttt{sql/measure\_runtime.sql}). Both are far above the 15-second threshold: Q10 averages about 1.9 minutes and Q12 about 3.0 minutes, and the warm runs are no faster than the cold run, so the cost is CPU work in the plan rather than disk reads.
+
+\begin{xltabular}{\linewidth}{l r r r X}
+
+\toprule
+
+\textbf{Query} & \textbf{Run 1 (cold)} & \textbf{Run 2} & \textbf{Run 3} & \textbf{Average} \\
+
+\midrule
+
+Q10 & 115.7 s & 112.0 s & 113.5 s & 113.7 s (1.9 min) \\
+
+Q12 & 178.7 s & 177.3 s & 179.0 s & 178.3 s (3.0 min) \\
+
+\bottomrule
+
+\end{xltabular}
+
+Execution Time values reported by PostgreSQL; AWS RDS PostgreSQL instance, statement\_timeout disabled for the session, 2026-11-22.
+
+\textbf{Why they are slow.} Q10 evaluates a correlated \texttt{SUM} over Allocation for every candidate request inside an \texttt{EXISTS}; without an index on \texttt{Allocation(request\_id)} each evaluation is a full sequential scan. In Q12 PostgreSQL inlines the single-use CTE \texttt{donation\_remaining} into the correlated subquery and re-aggregates donations and allocations for every request.
+
+\textbf{Planned optimization (final report).} Indexes on \texttt{Allocation(\brk{}donation\_id)} and \texttt{Allocation(\brk{}request\_id)} (in a local test these brought Q10 under 0.1~s), and for Q12 a rewrite that materializes \texttt{donation\_remaining} once and replaces the correlated subquery with a join and \texttt{GROUP BY} (under 0.2 s locally, same results). The routes keep the same parameters and responses after optimization.
+\end{document}
