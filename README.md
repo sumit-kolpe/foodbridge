@@ -21,9 +21,9 @@ CIS 5500 – Database and Information Systems, Fall 2026 · **Group 25**
 |---|---|---|
 | M1 – Proposal | Done | [`docs/milestones/M1_Proposal.pdf`](docs/milestones/M1_Proposal.pdf) |
 | M2 – Detailed outline (schema, ER diagram, DDL) | Done | [`docs/milestones/M2_Detailed_Project_Outline.pdf`](docs/milestones/M2_Detailed_Project_Outline.pdf) |
-| M3 – Database populated on RDS + SQL queries | Done | [`docs/milestones/M3_Database_and_Queries.pdf`](docs/milestones/M3_Database_and_Queries.pdf), [`sql/queries.sql`](sql/queries.sql) |
-| M4 – API specification + mentor check-in | Next | `server/` (coming) |
-| M5 – Final report, code, demo video | Upcoming | `client/`, `server/` (coming) |
+| M3 – Database populated on RDS + SQL queries | Done | [`docs/milestones/FoodBridge_Milestone_3.pdf`](docs/milestones/FoodBridge_Milestone_3.pdf), [`sql/queries.sql`](sql/queries.sql) |
+| M4 – API specification + mentor check-in | In progress | [`docs/milestones/M4_API_Specification.pdf`](docs/milestones/M4_API_Specification.pdf), [`server/`](server/) |
+| M5 – Final report, code, demo video | Upcoming | `client/` (coming) |
 
 ## Repository layout
 
@@ -40,9 +40,11 @@ CIS 5500 – Database and Information Systems, Fall 2026 · **Group 25**
 | `sql/create_guest_user.sql` | Read-only `fb_guest` role for TAs (password set at deploy time, never committed) |
 | `sql/queries.sql` | **The 12 Milestone 3 queries** (6 simple, 6 complex) |
 | `sql/optimization_notes.md` | Baseline timings and first optimization findings |
+| `sql/measure_runtime.sql` | `EXPLAIN ANALYZE` runs of the long-running queries Q10 and Q12 on RDS |
 | `reports/` | `philly_eda.md` (EDA + entity resolution log), `cleaning_report.md`, `data_summary.md` (statistics + 41 validation checks) |
-| `docs/milestones/` | Submitted milestone documents (M3 also as LaTeX source) |
-| `server/`, `client/` | Express API and React app (added in M4/M5) |
+| `docs/milestones/` | Submitted milestone documents (M1 proposal, M2 outline, M3 submission) |
+| `server/` | **Express REST API**: 19 routes (one per M3 query + 7 auxiliary); see [`server/README.md`](server/README.md) |
+| `client/` | React app (M5) |
 
 ## Reproduce the database
 
